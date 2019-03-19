@@ -12,4 +12,8 @@ npm run build,
 npm run server,
 
 本项目集成了sass
-打包前，打开sass.cmd文件，监听sass文件编译，然后npm run build,再npm run server即可开始调试运行
+打包前，打开sass-compile.cmd文件，
+监听sass文件编译，
+然后npm run build,
+再npm run server
+即可开始调试运行
