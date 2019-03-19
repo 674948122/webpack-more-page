@@ -1,4 +1,4 @@
-import './css/qby_dy_318.css';
+import './css/qby_dq_318.css';
 import swiper from './css/swiper/swiper.min.css';  
 import $ from 'jquery';
 import './js/customer.js';

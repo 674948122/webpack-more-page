@@ -27,7 +27,7 @@ module.exports = {
         // babelPolyfill:'babel-polyfill',//添加了这个东西，才能完美的将ES6转码,否则Babel默认只转换新的JavaScript句法（syntax），而不转换新的API，如：Set Map
         // 入口js文件的路径
         // main: './src/main.js'
-        qby_dy_318: './src/qby_dy_318.js',
+        qby_dq_318: './src/qby_dq_318.js',
         index2: './src/index2.js'
     },
     // 出口文件配置项
@@ -128,10 +128,10 @@ module.exports = {
                 collapseWhitespace: true //折叠空白区域 也就是压缩代码
             },
             hash: true, //为了开发中js有缓存效果，所以加入hash，这样可以有效避免缓存JS。
-            template:'./src/qby_dy_318.html', //是要打包的html模版路径和文件名称。
-            filename: "qby_dy_318.html",
-            title: "qby_dy_318",
-            chunks:['qby_dy_318'], //添加引入的js,也就是entry中的key
+            template:'./src/qby_dq_318.html', //是要打包的html模版路径和文件名称。
+            filename: "qby_dq_318.html",
+            title: "qby_dq_318",
+            chunks:['qby_dq_318'], //添加引入的js,也就是entry中的key
             favicon: './favicon.ico',//添加特定的 favicon 路径到输出的 HTML 文件中。
             inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
             showErrors:true,//是否将错误信息输出到html页面中
