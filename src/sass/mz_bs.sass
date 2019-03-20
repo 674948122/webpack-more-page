@@ -1,0 +1,64 @@
+iframe
+    display: none
+.back
+    position: relative
+    width: calc( 750vw / 7.5 )
+    height: calc( 6989vw / 7.5 )
+    background: url('../img/mz_bs_back.jpg') no-repeat
+    background-size: 100% 100%
+    overflow-x: hidden
+    #swiper_one
+        &.swiper-container 
+            width: calc( 684vw  / 7.5 )
+            height: calc( 513vw / 7.5 )
+            position: absolute
+            top: calc( 1118vw / 7.5 )
+            left: calc( 50% - 684vw  / 7.5 / 2 )
+        .swiper-wrapper
+            .one
+                background: url('../img/mz_bs_01.jpg') no-repeat
+                background-size: 100% 100%
+            .two
+                background: url('../img/mz_bs_02.jpg') no-repeat
+                background-size: 100% 100%
+            .three
+                background: url('../img/mz_bs_03.jpg') no-repeat
+                background-size: 100% 100%
+            .four 
+                background: url('../img/mz_bs_04.jpg') no-repeat
+                background-size: 100% 100%
+        .swiper-pagination-bullet-active
+            background: #fff
+    .form_post 
+        position: absolute
+        width: calc( 650vw / 7.5 )
+        height: calc( 344vw / 7.5 )
+        &.form_one 
+            top: calc( 1806vw / 7.5 )
+            left: calc( 50% - 650vw / 7.5 / 2 )
+        &.form_two
+            top: calc( 6099vw / 7.5 )
+            left: calc( 50% - 650vw / 7.5 / 2 )
+        input
+            width: 100%
+            height: calc( 76vw / 7.5 )
+            margin-bottom: calc( 10vw / 7.5 )
+            text-indent: calc( 20vw / 7.5 )
+            color: #999999
+            border: 0
+            background: transparent
+            outline: none
+        .req
+            position: relative
+            span
+                font-size: calc( 12vw / 7.5 )
+                color: #ffffff
+                position: absolute
+                line-height: calc( 76vw / 7.5 )
+                top: 0
+                right: calc( 15vw / 7.5)
+                display: inline-block
+                opacity: .5
+        .submit
+            width: 100%
+            height: calc( 75vw / 7.5 )

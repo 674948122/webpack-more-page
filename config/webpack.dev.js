@@ -13,8 +13,8 @@ function resolve (dir) {
 console.log(resolve ('abcdefghijklmnop'));
 
 var website ={
-    // publicPath:"https://dsp2.yzf.com.cn/"  //线上环境
-    publicPath:"http://localhost:8080/" //本地调试环境
+    publicPath:"https://dsp2.yzf.com.cn/"  //线上环境
+    // publicPath:"http://localhost:8080/" //本地调试环境
     // publicPath:"http://192.168.1.103:8888/"
 }
 // 这里的IP和端口，是你本机的ip或者是你devServer配置的IP和端口。
@@ -28,7 +28,7 @@ module.exports = {
         // 入口js文件的路径
         // main: './src/main.js'
         qby_dq_318: './src/qby_dq_318.js',
-        index2: './src/index2.js'
+        mz_bs: './src/mz_bs.js'
     },
     // 出口文件配置项
     output: {
@@ -142,10 +142,10 @@ module.exports = {
                 collapseWhitespace:true //折叠空白区域 也就是压缩代码
             },
             hash:true, //为了开发中js有缓存效果，所以加入hash，这样可以有效避免缓存JS。
-            template:'./src/index2.html', //是要打包的html模版路径和文件名称。
-            filename: "index2.html",
-            title: "页面一",
-            chunks:['index2'], //添加引入的js,也就是entry中的key
+            template:'./src/mz_bs.html', //是要打包的html模版路径和文件名称。
+            filename: "mz_bs.html",
+            title: "迷住软装，别墅私人订制一体化服务",
+            chunks:['mz_bs'], //添加引入的js,也就是entry中的key
             favicon: './favicon.ico',//添加特定的 favicon 路径到输出的 HTML 文件中。
             inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
             showErrors:true,//是否将错误信息输出到html页面中
