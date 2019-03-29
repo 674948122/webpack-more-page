@@ -30,6 +30,7 @@ module.exports = {
         qby_dq_318: './src/qby_dq_318.js',
         mz_bs: './src/mz_bs.js',
         qby_dq_318_new: './src/qby_dq_318_new.js',
+        qby_wkb1_bj: './src/qby_wkb1_bj.js',
     },
     // 出口文件配置项
     output: {
@@ -161,6 +162,20 @@ module.exports = {
             filename: "qby_dq_318_new.html",
             title: "全包圆-全包装修省！送！免！",
             chunks:['qby_dq_318_new'], //添加引入的js,也就是entry中的key
+            favicon: './favicon.ico',//添加特定的 favicon 路径到输出的 HTML 文件中。
+            inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
+            showErrors:true,//是否将错误信息输出到html页面中
+        }),
+        new htmlPlugin({
+            minify: { //是对html文件进行压缩
+                removeAttributeQuotes: true,  //removeAttrubuteQuotes是却掉属性的双引号。
+                collapseWhitespace: true //折叠空白区域 也就是压缩代码
+            },
+            hash: true, //为了开发中js有缓存效果，所以加入hash，这样可以有效避免缓存JS。
+            template:'./src/qby_wkb1_bj.html', //是要打包的html模版路径和文件名称。
+            filename: "qby_wkb1_bj.html",
+            title: "一站式装修服务价格计算",
+            chunks:['qby_wkb1_bj'], //添加引入的js,也就是entry中的key
             favicon: './favicon.ico',//添加特定的 favicon 路径到输出的 HTML 文件中。
             inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
             showErrors:true,//是否将错误信息输出到html页面中
