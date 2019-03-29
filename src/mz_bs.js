@@ -1,5 +1,5 @@
-import css from './css/mz_bs.css';
-import swiper from './css/swiper/swiper.min.css';  
+import './css/mz_bs.css';
+import './css/swiper/swiper.min.css';  
 import $ from 'jquery';
 import './js/customer.js';
 import Swiper from 'swiper';

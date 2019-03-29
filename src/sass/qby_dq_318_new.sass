@@ -1,0 +1,135 @@
+.back
+    position: relative
+    width: calc( 750vw / 7.5 )
+    height: calc( 7781vw / 7.5 )
+    background: url('../img/qby_dq_318_new_back.jpg') no-repeat
+    background-size: 100% 100%
+    overflow-x: hidden
+    .time
+        color: #ffffff
+        font-size: calc( 24vw / 7.5 )
+        text-align: center
+        margin: 0 auto
+        margin-top: calc( 620vw / 7.5 )
+        text-indent: calc( 100vw / 7.5 )
+    #swiper_one
+        &.swiper-container 
+            width: calc( 593vw * 3 / 7.5 )
+            height: calc( 334vw / 7.5 )
+            position: absolute
+            top: calc( 1245vw / 7.5 )
+            left: calc( 50% - 593vw * 3 / 7.5 / 2 )
+            overflow: visible
+        .swiper-wrapper
+            .one
+                background: url('../img/qby_dq_318_new_1.jpg') no-repeat
+                background-size: 100% 100%
+            .two
+                background: url('../img/qby_dq_318_new_2.jpg') no-repeat
+                background-size: 100% 100%
+            .three
+                background: url('../img/qby_dq_318_new_3.jpg') no-repeat
+                background-size: 100% 100%
+            .four 
+                background: url('../img/qby_dq_318_new_4.jpg') no-repeat
+                background-size: 100% 100%
+            .five 
+                background: url('../img/qby_dq_318_new_5.jpg') no-repeat
+                background-size: 100% 100%
+        .swiper-pagination 
+            bottom: calc( -50vw / 7.5 )
+        .swiper-pagination-bullet
+            width: calc( 33vw / 7.5 )
+            height: calc( 4vw / 7.5 )
+            box-sizing: border-box
+            border: 1px solid #fff
+            border-radius: calc( 4vw / 7.5 )
+            margin: 0 calc( 3vw / 7.5 )
+        .swiper-pagination-bullet-active
+            background: #fff
+        .swiper-button-prev 
+            left: calc( 490vw / 7.5 )
+            background-image: none
+            background: transparent
+            outline: none
+        .swiper-button-next 
+            right: calc( 490vw / 7.5 )
+            background-image: none
+            background: transparent
+            outline: none
+        .swiper-slide-active 
+            box-shadow: calc( 25vw / 7.5 ) 0 calc( 25vw / 7.5 ) 0 #9c5942,0 calc( 25vw / 7.5 ) calc( 25vw / 7.5 ) 0 #9c5942
+    .swiper_one_tit
+        width: calc( 594vw / 7.5 )
+        height: calc( 62vw / 7.5 )
+        line-height: calc( 62vw / 7.5 )
+        background: #000000
+        color: #ffffff
+        text-indent: calc( 24vw / 7.5 )
+        opacity: .6
+        font-size: calc( 22vw / 7.5 )
+        position: absolute
+        top: calc( 1517vw / 7.5 )
+        left: calc( 50% - 594vw / 7.5 / 2 )
+        z-index: 10
+    .form_post 
+        position: absolute
+        width: calc( 587vw / 7.5 )
+        height: calc( 363vw / 7.5 )
+        &.form_one 
+            top: calc( 1866vw / 7.5 )
+            left: calc( 50% - 587vw / 7.5 / 2 )
+        &.form_two
+            top: calc( 6425vw / 7.5 )
+            left: calc( 50% - 587vw / 7.5 / 2 )
+        input
+            width: 100%
+            height: calc( 81vw / 7.5 )
+            margin-bottom: calc( 13vw / 7.5 )
+            text-indent: calc( 20vw / 7.5 )
+            color: #999999
+            border: 0
+            background: transparent
+            outline: none
+        .submit
+            width: 100%
+            height: calc( 73vw / 7.5 )
+    .swiper-background
+        width: calc( 530vw / 7.5 )
+        height: calc( 120vw / 7.5 )
+        position: absolute
+        &.swiper_one
+            top: calc( 2255vw / 7.5 )
+            left: calc( 50% - 530vw / 7.5 / 2 )
+        &.swiper_two
+            top: calc( 6806vw / 7.5 )
+            left: calc( 50% - 530vw / 7.5 / 2 )
+        ul
+            width: 100%
+            height: 100%
+            li
+                height: calc( 120vw / 7.5 / 4 )
+                width: 100%
+                font-size: calc( 18vw / 7.5 ) !important
+                color: #656667 !important
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                &:nth-child(1)
+                    opacity: 1
+                &:nth-child(2)
+                    opacity: 0.75
+                &:nth-child(3)
+                    opacity: 0.5
+                &:nth-child(4)
+                    opacity: 0.25
+                &:nth-child(5)
+                    opacity: 0.1
+                div
+                    display: inline-block
+                    height: 100%
+                    &:last-child 
+                        min-width: calc( 115vw / 7.5 )
+                        text-align: right
+iframe
+    display: none
