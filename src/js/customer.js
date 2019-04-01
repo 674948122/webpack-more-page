@@ -357,13 +357,13 @@ $(".submit").click(function () {
     let $inputName = $elements.filter('input[name="name"]');
     if ($inputName.length > 0 && !$inputName.val()) {
         alert('请输入姓名');
-        return;
+        return false;
     }
     //电话号码格式验证
     let $inputPhone = $elements.filter('input[name="phoneNumber"]');
     if ($inputPhone.length > 0 && !$inputPhone.val().isMobilePhoneNumber()) {
         alert('手机号码格式不正确');
-        return;
+        return false;
     }
     //备注处理（几室几厅几卫）
     let $targetSel = $form.find('select[class*="remark"]');
@@ -405,9 +405,11 @@ $(".submit").click(function () {
                     _hmt.push(['_trackEvent', 'Click', 'Order', 'success', 1]);
                 }
                 alert("恭喜您，报名成功");
+                return false;
             }
             else {
                 alert("同一号码只能报名一次");
+                return false;
             }
         },
         error: function (XMLHttpRequest, textStatus, errorThrown) {
@@ -465,7 +467,4 @@ function createScript_BaiduOCPC() {
 
 /*页面初始化*/
 customerInit.init();
-
-
-
 

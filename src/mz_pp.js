@@ -1,4 +1,4 @@
-import './css/mz_bs.css';
+import './css/mz_pp.css';
 import './css/swiper/swiper.min.css';  
 import $ from 'jquery';
 import './js/customer.js';
@@ -20,8 +20,11 @@ function goPAGE() {
 }
 goPAGE();
 
-window.onload = function() {
+$(window).on("load",function(){
     var mySwiper = new Swiper ('.swiper-container', {
+        effect : 'coverflow',
+        slidesPerView: 3,
+        centeredSlides: true,
         autoplay:{             //自动播放
             delay: 2500,
             disableOnInteraction: false,
@@ -35,4 +38,4 @@ window.onload = function() {
             clickable :true,
         }, 
     })
-}
+})
