@@ -8,6 +8,20 @@
     <meta name="description" content="迷住软装，高端一体化软装服务，专注于精装住宅、高档私宅、别墅的软装品牌，甄选全球优质产品。200余个国际软装家居一线品牌原厂原装深度合作；国际领先的软装家居概念与高性价比的品质服务。" />
     <meta key>
     <style>*{margin: 0;padding: 0;}</style>
+    <script>
+        function goPAGE() {
+            if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+                var f = window.location.pathname;
+                var arr = f.split("_pc");
+                var parames = location.search;
+                window.location.href = window.location.origin + arr[0] + '.html' + parames
+            }
+            else {
+
+            }
+        }
+        goPAGE();
+    </script>
 </head>
 <body>
     <div class="backgroung-jsq">

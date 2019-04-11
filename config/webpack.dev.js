@@ -10,11 +10,11 @@ function resolve (dir) {
     return path.join(__dirname, './', dir)
 }
 
-console.log(resolve ('abcdefghijklmnop'));
+// console.log(resolve ('abcdefghijklmnop'));
 
 var website ={
-    // publicPath:"https://dsp2.yzf.com.cn/"  //线上环境
-    publicPath:"http://localhost:8080/" //本地调试环境
+    publicPath:"https://dsp2.yzf.com.cn/"  //线上环境
+    // publicPath:"http://localhost:8080/" //本地调试环境
     // publicPath:"http://192.168.1.103:8888/"
 }
 // 这里的IP和端口，是你本机的ip或者是你devServer配置的IP和端口。
@@ -34,6 +34,11 @@ module.exports = {
         qby_wkb1_bj: './src/qby_wkb1_bj.js',
         mz_pp: './src/mz_pp.js',
         mz_pp_pc: './src/mz_pp_pc.js',
+        kjby_jb1: './src/kjby_jb1.js',
+        kjby_jb1_pc: './src/kjby_jb1_pc.js',
+        kjby_jb2: './src/kjby_jb2.js',
+        kjby_jb2_pc: './src/kjby_jb2_pc.js',
+        
     },
     // 出口文件配置项
     output: {
@@ -84,7 +89,7 @@ module.exports = {
                     loader:'url-loader', //是指定使用的loader和loader的配置参数
                     options:{
                         limit: 50000,  //是把小于500B的文件打成Base64的格式，写入JS
-                        name: "[name].[hash:4].[ext]",//打包后文件名
+                        name: "[name].[ext]",//打包后文件名
                         outputPath: "./images",//打包后图片文件输出路径
                         publicPath: website.publicPath + './images'
                     }
@@ -96,7 +101,7 @@ module.exports = {
                 loader: 'url-loader',
                 options: {
                   limit: 10000,
-                  name: 'media/[name].[hash:7].[ext]'
+                  name: 'video/[name].[ext]'
                 }
             },
             //字体库loader
@@ -221,6 +226,62 @@ module.exports = {
             filename: "mz_pp_pc.html",
             title: "迷住软装，别墅私人订制一体化服务",
             chunks:['mz_pp_pc'], //添加引入的js,也就是entry中的key
+            favicon: './favicon.ico',//添加特定的 favicon 路径到输出的 HTML 文件中。
+            inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
+            showErrors:true,//是否将错误信息输出到html页面中
+        }),
+        new htmlPlugin({
+            minify:{ //是对html文件进行压缩
+                removeAttributeQuotes:true,  //removeAttrubuteQuotes是却掉属性的双引号。
+                collapseWhitespace:true //折叠空白区域 也就是压缩代码
+            },
+            hash:true, //为了开发中js有缓存效果，所以加入hash，这样可以有效避免缓存JS。
+            template:'./src/kjby_jb1.html', //是要打包的html模版路径和文件名称。
+            filename: "kjby_jb1.html",
+            title: "CCTV-2《空间榜样》限时免费设计",
+            chunks:['kjby_jb1'], //添加引入的js,也就是entry中的key
+            favicon: './favicon.ico',//添加特定的 favicon 路径到输出的 HTML 文件中。
+            inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
+            showErrors:true,//是否将错误信息输出到html页面中
+        }),
+        new htmlPlugin({
+            minify:{ //是对html文件进行压缩
+                removeAttributeQuotes:true,  //removeAttrubuteQuotes是却掉属性的双引号。
+                collapseWhitespace:true //折叠空白区域 也就是压缩代码
+            },
+            hash:true, //为了开发中js有缓存效果，所以加入hash，这样可以有效避免缓存JS。
+            template:'./src/kjby_jb1_pc.html', //是要打包的html模版路径和文件名称。
+            filename: "kjby_jb1_pc.html",
+            title: "CCTV-2《空间榜样》限时免费设计",
+            chunks:['kjby_jb1_pc'], //添加引入的js,也就是entry中的key
+            favicon: './favicon.ico',//添加特定的 favicon 路径到输出的 HTML 文件中。
+            inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
+            showErrors:true,//是否将错误信息输出到html页面中
+        }),
+        new htmlPlugin({
+            minify:{ //是对html文件进行压缩
+                removeAttributeQuotes:true,  //removeAttrubuteQuotes是却掉属性的双引号。
+                collapseWhitespace:true //折叠空白区域 也就是压缩代码
+            },
+            hash:true, //为了开发中js有缓存效果，所以加入hash，这样可以有效避免缓存JS。
+            template:'./src/kjby_jb2.html', //是要打包的html模版路径和文件名称。
+            filename: "kjby_jb2.html",
+            title: "CCTV-2《空间榜样》限时免费设计",
+            chunks:['kjby_jb2'], //添加引入的js,也就是entry中的key
+            favicon: './favicon.ico',//添加特定的 favicon 路径到输出的 HTML 文件中。
+            inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
+            showErrors:true,//是否将错误信息输出到html页面中
+        }),
+        new htmlPlugin({
+            minify:{ //是对html文件进行压缩
+                removeAttributeQuotes:true,  //removeAttrubuteQuotes是却掉属性的双引号。
+                collapseWhitespace:true //折叠空白区域 也就是压缩代码
+            },
+            hash:true, //为了开发中js有缓存效果，所以加入hash，这样可以有效避免缓存JS。
+            template:'./src/kjby_jb2_pc.html', //是要打包的html模版路径和文件名称。
+            filename: "kjby_jb2_pc.html",
+            title: "CCTV-2《空间榜样》限时免费设计",
+            chunks:['kjby_jb2_pc'], //添加引入的js,也就是entry中的key
             favicon: './favicon.ico',//添加特定的 favicon 路径到输出的 HTML 文件中。
             inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
             showErrors:true,//是否将错误信息输出到html页面中

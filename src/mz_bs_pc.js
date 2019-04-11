@@ -1,23 +1,12 @@
 import './css/mz_bs_pc.css';
+
 import './css/swiper/swiper.min.css';  
 import $ from 'jquery';
 
 import './js/customer.js';
 import Swiper from 'swiper';
 import './js/jquery.vticker';
-// import './js/Global.js'
-function goPAGE() {
-    if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-        var f = window.location.pathname;
-        var arr = f.split("_pc");
-        var parames = location.search;
-        window.location.href = window.location.origin + arr[0] + '.html' + parames
-    }
-    else {
 
-    }
-}
-goPAGE();
 
 window.onload = function() {
     var mySwiper = new Swiper ('.swiper-container', {

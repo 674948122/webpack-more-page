@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>迷住软装，别墅私人订制一体化服务</title>
-    <meta name="keywords" content="北京迷住软装  别墅软装">
-    <meta name="description" content="迷住软装，北京别墅装修一体化服务" />
+    <title>CCTV-2《空间榜样》限时免费设计</title>
+    <meta name="keywords" content="空间榜样  免费设计  全屋装修">
+    <meta name="description" content="CCTV-2《空间榜样》限时征集免费设计，全屋平面设计方案" />
     <meta key>
     <style>*{margin: 0;padding: 0;}</style>
     <script>
+
+
+
         function goPAGE() {
             if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
 
@@ -21,62 +24,60 @@
                 window.location.href = window.location.origin + arr[0] + '_pc.html' + parames
             }
         }
-        goPAGE();
+
+        if (window.self === window.top) {
+            goPAGE(); 
+        }else{
+            
+        }
+       
     </script>
 </head>
 <body>
     <div class="back">
-        <!-- 图片轮播 -->
-        <div id="swiper_one" class="swiper-container">
-            <a id="b-a" href="#"></a>
-            <div class="swiper-wrapper">
-                <div class="swiper-slide one"></div>
-                <div class="swiper-slide two"></div>
-                <div class="swiper-slide three"></div>
-                <div class="swiper-slide four"></div>
-            </div>
-            <!-- 如果需要分页器 -->
-            <div class="swiper-pagination"></div>
-        </div>
-        <!-- 结束 -->
+        <video id="video" class="video-js vjs-default-skin" controls poster="./images/kjby_bj1_video.jpg" preload="none" width="800" height="100"
+            data-setup="{}">
+            <source src="https://yenova-bucket1.oss-cn-qingdao.aliyuncs.com/1.mp4" type='video/mp4' />
+            <source src="https://yenova-bucket1.oss-cn-qingdao.aliyuncs.com/1.webm" type='video/webm' />
+            <source src="https://yenova-bucket1.oss-cn-qingdao.aliyuncs.com/1.ogv" type='video/ogg' />
+        </video>
+        <div class="action action_one"><span class="show-city">北京</span>站<span class="icon_loaction"></span>活动时间：<span class="fristDay"></span>~<span class="lastDay"></span></div>
         <!-- 表单1 -->
         <form class="form_post form_one">
-            <input name="channel" value="迷住_别墅" type="hidden" />
+            <input name="channel" value="空间榜样_简版1" type="hidden" />
             <div class="req">
                 <input name="name" type="text" placeholder="您的称呼" />
+                <span class="mark">*</span>
             </div>
             <div class="req">
                 <input name="phoneNumber" type="text" placeholder="您的联系方式" />
+                <span class="mark">*</span>
             </div>
             <div class="req">
                 <input name="squareMeters" type="text" class="" placeholder="您的房屋面积">
-                <span>m²</span>
             </div>
             <div class="submit"></div>
         </form>
         <!-- 结束 -->
+        <div class="action action_two"><span class="show-city">北京</span>站<span class="icon_loaction"></span>活动时间：<span class="fristDay"></span>~<span class="lastDay"></span></div>
         <!-- 表单2 -->
         <form class="form_post form_two">
-            <input name="channel" value="迷住_别墅" type="hidden" />
+            <input name="channel" value="空间榜样_简版1" type="hidden" />
             <div class="req">
                 <input name="name" type="text" placeholder="您的称呼" />
+                <span class="mark">*</span>
             </div>
             <div class="req">
                 <input name="phoneNumber" type="text" placeholder="您的联系方式" />
+                <span class="mark">*</span>
             </div>
             <div class="req">
                 <input name="squareMeters" type="text" class="" placeholder="您的房屋面积">
-                <span>m²</span>
             </div>
             <div class="submit"></div>
         </form>
-        <!-- 结束 -->
-        <div class="bottomFixed">
-            <a class="item" id="b-logo" href="#b-a"></a>
-            <a class="item" id="b-phone" href="tel:4009996687"></a>
-        </div>
+
     </div>
-    <img class="bottom_logo" src="./img/soft_renovation.jpg" alt="">
      <!-- map -->
      <script src="https://api.map.baidu.com/api?v=2.0&ak=OpqLAedMGONFbBGVarRqSGCS"></script>
 </body>

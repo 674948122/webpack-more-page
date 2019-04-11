@@ -7,18 +7,7 @@ import './js/jquery.vticker';
 
 
 
-function goPAGE() {
-    if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
 
-    }
-    else {
-        var f = window.location.pathname;
-        var arr = f.split(".");
-        var parames = location.search;
-        window.location.href = window.location.origin + arr[0] + '_pc.html' + parames
-    }
-}
-goPAGE();
 
 $(window).on("load",function(){
     var mySwiper = new Swiper ('.swiper-container', {

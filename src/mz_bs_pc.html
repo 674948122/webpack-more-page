@@ -8,6 +8,20 @@
     <meta name="description" content="迷住别墅软装，别墅软装私人订制一体化服务。全屋软装方案定制设计一体化，软装全品类一站式购齐。" />
     <meta key>
     <style>*{margin: 0;padding: 0;}</style>
+    <script>
+        function goPAGE() {
+            if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+                var f = window.location.pathname;
+                var arr = f.split("_pc");
+                var parames = location.search;
+                window.location.href = window.location.origin + arr[0] + '.html' + parames
+            }
+            else {
+        
+            }
+        }
+        goPAGE();
+    </script>
 </head>
 <body>
     <div class="back">

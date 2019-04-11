@@ -465,6 +465,8 @@ function createScript_BaiduOCPC() {
     $('body').append(str2);
 }
 
-/*页面初始化*/
-customerInit.init();
 
+window.onload = function() {
+   /*页面初始化*/
+    customerInit.init();
+}

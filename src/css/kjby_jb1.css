@@ -1,0 +1,71 @@
+iframe {
+  display: none; }
+
+.back {
+  position: relative;
+  width: calc( 750vw / 7.5 );
+  height: calc( 3837vw / 7.5 );
+  background: url("../img/kjby_bj1_back.jpg") no-repeat;
+  background-size: 100% 100%;
+  overflow-x: hidden; }
+  .back #video {
+    width: calc( 687vw / 7.5 );
+    height: calc( 389vw / 7.5 );
+    position: absolute;
+    top: calc( 142vw / 7.5 );
+    left: calc( 50% - 687vw / 7.5 / 2 ); }
+    .back #video .vjs-big-play-button {
+      top: calc( 50% - 1.5em / 2 );
+      left: calc( 50% - 3em / 2 ); }
+  .back .action {
+    font-size: calc( 30vw / 7.5 );
+    color: #333333;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center; }
+    .back .action.action_one {
+      top: calc( 580vw / 7.5 ); }
+    .back .action.action_two {
+      top: calc( 3275vw / 7.5 ); }
+    .back .action span {
+      display: inline-block; }
+    .back .action .icon_loaction {
+      background: url("../img/kjby_bj1_icon_location.png") no-repeat;
+      background-size: 100% 100%;
+      width: calc( 19vw / 7.5 );
+      height: calc( 24vw / 7.5 );
+      margin: 0 calc( 10vw / 7.5 ) 0 calc( 5vw / 7.5 ); }
+  .back .form_post {
+    position: absolute;
+    width: calc( 688vw / 7.5 );
+    height: calc( 368vw / 7.5 ); }
+    .back .form_post.form_one {
+      top: calc( 699vw / 7.5 );
+      left: calc( 50% - 688vw / 7.5 / 2 ); }
+    .back .form_post.form_two {
+      top: calc( 3393vw / 7.5 );
+      left: calc( 50% - 688vw / 7.5 / 2 ); }
+    .back .form_post input {
+      width: 100%;
+      height: calc( 78vw / 7.5 );
+      margin-bottom: calc( 13vw / 7.5 );
+      text-indent: calc( 20vw / 7.5 );
+      color: #999999;
+      border: 0;
+      background: transparent;
+      outline: none; }
+    .back .form_post .req {
+      position: relative; }
+      .back .form_post .req .mark {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: calc( 27vw / 7.5 );
+        line-height: calc( 78vw / 7.5 );
+        color: red; }
+    .back .form_post .submit {
+      width: 100%;
+      height: calc( 95vw / 7.5 ); }
+
+/*# sourceMappingURL=kjby_jb1.css.map */
