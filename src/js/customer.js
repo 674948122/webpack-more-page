@@ -143,7 +143,7 @@ var aboutCompany = {
         })[0];
     }
 };
-
+// console.log(aboutCompany)
 /* 通用处理url*/
 var aboutUrl = {
     getCurrentRequestValue: function (parameter) {
@@ -219,7 +219,7 @@ var customer = {
     url: '',            //url地址
     userId: '',         //关联推广员id
     remark: ''          //备注
-};
+};                                                                                                                                                                                                                                                                                                                                                                                                                     
 
 /* 报名信息提交对象及页面元素初始化，仅用于customer对象 */
 var customerInit = {
@@ -265,19 +265,25 @@ var customerInit = {
         customer.ck = aboutCookie.getCookie('ck');
         customer.userId = aboutCookie.getCookie('userId');
     },
-
     //根据url初始化
     initByUrl: function () {
+        
         for (prop in customer) {
             let paramValue = aboutUrl.getCurrentRequestValue(prop);
             customer[prop] = paramValue ? paramValue : '';
+          
         }
+       
         //如果biddomain，转化为id
         if (customer.bid && isNaN(customer.bid)) {
             let company = aboutCompany.getByDomain(customer.bid);
             if (company !== undefined) {
                 customer.bid = company['id'];
             }
+        }
+        
+        if(customer.bid){
+            $('.bid').val(customer.bid);
         }
         //根据域名处理bid
         customer.url = window.location.href;
@@ -298,6 +304,11 @@ var customerInit = {
             let company = aboutCompany.getById(customer.bid);
             if (company !== undefined) {
                 $('#show-city,.show-city').text(company['name']);
+                if (company['name']=='北京'||company['name']=='保定') {
+                    $('.show_city_qby').text(company['name']);
+                }else{
+                    $('.show_city_qby').text('北京');
+                }
             }
         }
 
@@ -316,6 +327,13 @@ var customerInit = {
                     if (company !== undefined) {
                         customer.bid = company['id'];
                         $('#show-city,.show-city').text(company['name']);
+                        
+                        if (company['name']=='北京'||company['name']=='保定') {
+                            $('.show_city_qby').text(company['name']);
+                        }else{
+                            $('.show_city_qby').text('北京');
+                        }
+                        $('.bid').val(customer.bid)
                         //console.log('----------百度定位初始化----------');
                         //console.log(customer);
                     }
@@ -465,8 +483,5 @@ function createScript_BaiduOCPC() {
     $('body').append(str2);
 }
 
-
-window.onload = function() {
-   /*页面初始化*/
-    customerInit.init();
-}
+//初始化
+customerInit.init();

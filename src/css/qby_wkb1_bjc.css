@@ -7,50 +7,26 @@ iframe {
 .back {
   position: relative;
   width: calc( 750vw / 7.5 );
-  height: calc( 7990vw / 7.5 );
-  background: url("../img/qby_wkb1_bj_back.jpg") no-repeat;
+  height: calc( 7943vw / 7.5 );
+  background: url("../img/qby_wkb1_bjc_back.jpg") no-repeat;
   background-size: 100% 100%;
   overflow-x: hidden; }
   .back .show_city_qby {
     position: absolute;
-    top: calc( 218vw / 7.5 );
-    left: calc( 194vw / 7.5 );
-    color: #ffffff;
+    top: calc( 178vw / 7.5 );
+    left: calc( 602vw / 7.5 );
+    color: #ff6101;
     font-size: calc( 27vw / 7.5 );
     height: calc( 27vw / 7.5 );
     line-height: calc( 27vw / 7.5 ); }
-  .back .sign_up_num {
-    position: absolute;
-    width: 100vw;
-    top: calc( 5645vw / 7.5 );
-    left: 0;
-    text-align: center; }
-    .back .sign_up_num .tit {
-      font-size: calc( 38vw / 7.5 );
-      font-weight: 900;
-      color: #b5904a;
-      height: calc( 38vw / 7.5 );
-      line-height: calc( 38vw / 7.5 );
-      margin-bottom: calc( 18vw / 7.5 ); }
-    .back .sign_up_num .text {
-      font-size: calc( 28vw / 7.5 );
-      color: #333333;
-      height: calc( 28vw / 7.5 );
-      line-height: calc( 28vw / 7.5 ); }
-      .back .sign_up_num .text .people_num {
-        color: #b5904a;
-        display: inline-block;
-        font-size: calc( 28vw / 7.5 );
-        height: calc( 28vw / 7.5 );
-        line-height: calc( 28vw / 7.5 ); }
   .back .money {
     position: absolute;
-    top: calc( 1707vw / 7.5 );
+    top: calc( 1795vw / 7.5 );
     left: calc( 50% - 600vw / 7.5 / 2 );
     display: flex;
     flex-direction: column;
     width: calc( 600vw / 7.5 );
-    height: calc( 280 / 7.5 ); }
+    height: calc( 280vw / 7.5 ); }
     .back .money .row {
       display: flex;
       flex-direction: row;
@@ -78,49 +54,21 @@ iframe {
     width: calc( 334vw / 7.5 );
     height: calc( 54vw / 7.5 );
     line-height: calc( 54vw / 7.5 );
-    top: calc( 1571vw / 7.5 );
+    top: calc( 1664vw / 7.5 );
     right: calc( 100vw / 7.5 );
     text-align: right; }
-  .back #swiper_one.swiper-container {
-    width: calc( 750vw  / 7.5 );
-    height: calc( 560vw / 7.5 );
-    position: absolute;
-    top: calc( 3606vw / 7.5 );
-    left: 0; }
-  .back #swiper_one .swiper-wrapper .one {
-    background: url("../img/qby_wkb1_bj_1.jpg") no-repeat;
-    background-size: 100% 100%; }
-  .back #swiper_one .swiper-wrapper .two {
-    background: url("../img/qby_wkb1_bj_2.jpg") no-repeat;
-    background-size: 100% 100%; }
-  .back #swiper_one .swiper-wrapper .three {
-    background: url("../img/qby_wkb1_bj_3.jpg") no-repeat;
-    background-size: 100% 100%; }
-  .back #swiper_one .swiper-pagination-bullet-active {
-    background: #fff; }
-  .back .swiper_shadow {
-    width: calc( 292vw  / 7.5 );
-    height: calc( 560vw / 7.5 );
-    position: absolute;
-    top: calc( 3606vw / 7.5 );
-    left: 0;
-    z-index: 10;
-    background: url("../img/qby_wkb1_bj_swiper_shadow.png") no-repeat;
-    background-size: 100% 100%; }
   .back .form_post {
     position: absolute;
     width: calc( 650vw / 7.5 );
     height: calc( 420vw / 7.5 ); }
     .back .form_post.form_one {
-      top: calc( 1060vw / 7.5 );
+      top: calc( 1138vw / 7.5 );
       left: calc( 50% - 650vw / 7.5 / 2 ); }
     .back .form_post.form_two {
-      top: calc( 5767vw / 7.5 );
-      height: calc( 334vw / 7.5 );
+      top: calc( 5666vw / 7.5 );
       left: calc( 50% - 650vw / 7.5 / 2 ); }
     .back .form_post.form_three {
-      height: calc( 334vw / 7.5 );
-      top: calc( 7343vw / 7.5 );
+      top: calc( 7422vw / 7.5 );
       left: calc( 50% - 650vw / 7.5 / 2 ); }
     .back .form_post input {
       width: 100%;
@@ -151,24 +99,55 @@ iframe {
         text-indent: calc( 20vw / 7.5 );
         color: #999999;
         outline: none;
-        border: calc( 1vw / 7.5 ) solid #cccaca;
+        border: calc( 1vw / 7.5 ) solid #ece8e8;
         border-radius: 3px;
         background: transparent; }
       .back .form_post .req option {
         color: #999999 !important;
         outline: none !important;
-        border: calc( 1vw / 7.5 ) solid #cccaca !important;
+        border: calc( 1vw / 7.5 ) solid #ece8e8 !important;
         border-radius: 3px !important;
         background: transparent !important; }
     .back .form_post .submit {
       width: 100%;
       height: calc( 75vw / 7.5 ); }
+  .back .sign_up_num {
+    position: absolute;
+    width: 100vw;
+    top: calc( 5645vw / 7.5 );
+    left: 0;
+    text-align: center; }
+    .back .sign_up_num.one {
+      top: calc( 5535vw / 7.5 ); }
+    .back .sign_up_num.two {
+      top: calc( 7296vw / 7.5 ); }
+    .back .sign_up_num .tit {
+      font-size: calc( 38vw / 7.5 );
+      font-weight: 900;
+      color: #ed6c00;
+      height: calc( 38vw / 7.5 );
+      line-height: calc( 38vw / 7.5 );
+      margin-bottom: calc( 18vw / 7.5 ); }
+    .back .sign_up_num .text {
+      font-size: calc( 28vw / 7.5 );
+      color: #333333;
+      height: calc( 28vw / 7.5 );
+      line-height: calc( 28vw / 7.5 ); }
+      .back .sign_up_num .text .people_num {
+        color: #ed6c00;
+        display: inline-block;
+        font-size: calc( 28vw / 7.5 );
+        height: calc( 28vw / 7.5 );
+        line-height: calc( 28vw / 7.5 ); }
   .back .swiper-background {
     width: calc( 530vw / 7.5 );
     height: calc( 120vw / 7.5 );
     position: absolute; }
     .back .swiper-background.swiper_one {
-      top: calc( 6122vw / 7.5 );
+      top: calc( 6021vw / 7.5 );
+      left: calc( 50% - 530vw / 7.5 / 2 ); }
+    .back .swiper-background.swiper_two {
+      top: calc( 7776vw / 7.5 );
       left: calc( 50% - 530vw / 7.5 / 2 ); }
     .back .swiper-background ul {
       width: 100%;
@@ -198,7 +177,4 @@ iframe {
             min-width: calc( 115vw / 7.5 );
             text-align: right; }
 
-.bottom_logo {
-  width: 100vw; }
-
-/*# sourceMappingURL=qby_wkb1_bj.css.map */
+/*# sourceMappingURL=qby_wkb1_bjc.css.map */

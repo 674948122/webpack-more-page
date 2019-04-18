@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>一站式装修服务价格计算</title>
+    <meta name="keywords" content="一站式装修  装修报价">
+    <meta name="description" content="全包圆一站式装修服务价格计算，最新优惠活动特权领取" />
+    <meta key>
+    <style>*{margin: 0;padding: 0;}</style>
+    <script>
+        function goPAGE() {
+            if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+
+            }
+            else {
+                var f = window.location.pathname;
+                var arr = f.split(".");
+                var parames = location.search;
+                window.location.href = window.location.origin + arr[0] + '_pc.html' + parames
+            }
+        }
+
+        if (window.self === window.top) {
+            goPAGE(); 
+        }else{
+            
+        }
+    </script>
+</head>
+<body>
+    <div class="back">
+        <div class="show_city_qby">北京</div>
+        <!-- 表单1 -->
+        <form class="form_post form_one">
+            <input name="channel" value="全包圆_WKB1_北京C短" type="hidden" />
+            <input name="bid" class="bid" value="" type="hidden" />
+            <div class="req">
+                <input name="name" type="text" placeholder="您的称呼" />
+            </div>
+            <div class="req">
+                <input name="phoneNumber" type="text" placeholder="您的联系方式" />
+            </div>
+            <div class="req">
+                <input name="squareMeters" type="text" class="" placeholder="您的房屋面积">
+            </div>
+            <div class="req">
+                <select>
+                    <option value="">一室</option>
+                    <option value="">二室</option>
+                    <option value="">三室</option>
+                    <option value="">四室</option>
+                </select>
+                <select>
+                    <option value="">一厅</option>
+                    <option value="">二厅</option>
+                    <option value="">三厅</option>
+                    <option value="">四厅</option>
+                </select>
+                <select>
+                    <option value="">一卫</option>
+                    <option value="">二卫</option>
+                    <option value="">三卫</option>
+                    <option value="">四卫</option>
+                </select>
+            </div>
+            <div class="submit"></div>
+        </form>
+        <!-- 结束 -->
+        <div class="number"><span id="num">119900</span>.00</div>
+        <div class="money">
+            <div class="row">
+                <div class="item"><span class="label">设计费：</span><span class="money_one">????</span>元</div>
+                <div class="item"><span class="label">水电改造：</span><span class="money_two">????</span>元</div>
+            </div>
+            <div class="row">
+                <div class="item"><span class="label">主材装配：</span><span class="money_three">????</span>元</div>
+                <div class="item"><span class="label">家具花费：</span><span class="money_four">????</span>元</div>
+            </div>
+            <div class="row">
+                <div class="item"><span class="label">家电花费：</span><span class="money_five">????</span>元</div>
+                <div class="item"><span class="label">空气治理：</span><span class="money_six">????</span>元</div>
+            </div>
+        </div>
+    </div>
+     <!-- map -->
+     <script src="https://api.map.baidu.com/api?v=2.0&ak=OpqLAedMGONFbBGVarRqSGCS"></script>
+</body>
+</html>

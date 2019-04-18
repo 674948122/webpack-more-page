@@ -1,6 +1,5 @@
 import './css/qby_dq_318_new.css';
 import './css/swiper/swiper.min.css';  
-import $ from 'jquery';
 import './js/customer.js';
 import Swiper from 'swiper';
 import './js/jquery.vticker';

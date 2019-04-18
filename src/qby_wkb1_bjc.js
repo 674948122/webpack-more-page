@@ -1,20 +1,16 @@
-import './css/qby_wkb1_bj.css';
-import './css/swiper/swiper.min.css';  
+import './css/qby_wkb1_bjc.css';
 import './js/customer.js';
-import Swiper from 'swiper';
 import './js/jquery.vticker';
 
 window.onload = function() {
-    var mySwiper = new Swiper ('.swiper-container', {
-        autoplay:{             //自动播放
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-        direction: 'horizontal', // 水平切换选项
-        loop: true, // 循环模式选项
-    })
     //  人名轮播初始化
     $('#people_one').vTicker({
+        showItems: 4,
+        pause: 500,
+        speed: 1000,
+    });
+    //  人名轮播初始化
+    $('#people_two').vTicker({
         showItems: 4,
         pause: 500,
         speed: 1000,
@@ -50,7 +46,7 @@ function randomNum(minNum,maxNum){
         break; 
     } 
 } 
-//2999--99999
+
 var start = '2019-04-03';
 var staT = new Date(start);
 var now = new Date();
@@ -71,4 +67,3 @@ var c = datedifference(staT, now);//相差小时
 c = Math.round( c / 4.8)
 //console.log(c)
 $('.people_num').html(42 + c)
-

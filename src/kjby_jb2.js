@@ -1,5 +1,4 @@
 import './css/kjby_jb2.css';
-import $ from 'jquery';
 import './js/customer.js';
 import './js/jquery.vticker';
 import videojs from 'video.js'

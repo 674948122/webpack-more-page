@@ -1,0 +1,109 @@
+@font-face {
+  font-family: DS-DIGIT;
+  src: url("../css/fonts/DS-DIGIT.ttf"); }
+iframe {
+  display: none; }
+
+.back {
+  position: relative;
+  width: calc( 750vw / 7.5 );
+  height: calc( 2245vw / 7.5 );
+  background: url("../img/qby_wkb1_bjcd_back.jpg") no-repeat;
+  background-size: 100% 100%;
+  overflow-x: hidden; }
+  .back .show_city_qby {
+    position: absolute;
+    top: calc( 178vw / 7.5 );
+    left: calc( 602vw / 7.5 );
+    color: #ff6101;
+    font-size: calc( 27vw / 7.5 );
+    height: calc( 27vw / 7.5 );
+    line-height: calc( 27vw / 7.5 ); }
+  .back .money {
+    position: absolute;
+    top: calc( 1795vw / 7.5 );
+    left: calc( 50% - 600vw / 7.5 / 2 );
+    display: flex;
+    flex-direction: column;
+    width: calc( 600vw / 7.5 );
+    height: calc( 280vw / 7.5 ); }
+    .back .money .row {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: calc( 20vw / 7.5 ); }
+      .back .money .row:last-child {
+        margin-bottom: 0; }
+      .back .money .row .item {
+        width: calc( 290vw / 7.5 );
+        height: calc( 80vw / 7.5 );
+        line-height: calc( 80vw / 7.5 );
+        padding-left: calc( 28vw / 7.5 );
+        font-size: calc( 28vw / 7.5 );
+        color: #666666;
+        display: flex;
+        flex-direction: row; }
+        .back .money .row .item .label {
+          display: inline-block;
+          text-align-last: justify;
+          width: calc( 148vw / 7.5 ); }
+  .back .number {
+    position: absolute;
+    font-size: calc( 85vw / 7.5 );
+    color: #ffffff;
+    font-family: DS-DIGIT;
+    width: calc( 334vw / 7.5 );
+    height: calc( 54vw / 7.5 );
+    line-height: calc( 54vw / 7.5 );
+    top: calc( 1664vw / 7.5 );
+    right: calc( 100vw / 7.5 );
+    text-align: right; }
+  .back .form_post {
+    position: absolute;
+    width: calc( 650vw / 7.5 );
+    height: calc( 420vw / 7.5 ); }
+    .back .form_post.form_one {
+      top: calc( 1138vw / 7.5 );
+      left: calc( 50% - 650vw / 7.5 / 2 ); }
+    .back .form_post input {
+      width: 100%;
+      height: calc( 76vw / 7.5 );
+      margin-bottom: calc( 10vw / 7.5 );
+      text-indent: calc( 20vw / 7.5 );
+      color: #999999;
+      border: 0;
+      background: transparent;
+      outline: none; }
+    .back .form_post .req {
+      position: relative;
+      display: flex;
+      justify-content: space-between; }
+      .back .form_post .req span {
+        font-size: calc( 12vw / 7.5 );
+        color: #ffffff;
+        position: absolute;
+        line-height: calc( 76vw / 7.5 );
+        top: 0;
+        right: calc( 15vw / 7.5);
+        display: inline-block;
+        opacity: 0.5; }
+      .back .form_post .req select {
+        width: calc( 210vw / 7.5 );
+        height: calc( 80vw / 7.5 );
+        margin-bottom: calc( 10vw / 7.5 );
+        text-indent: calc( 20vw / 7.5 );
+        color: #999999;
+        outline: none;
+        border: calc( 1vw / 7.5 ) solid #ece8e8;
+        border-radius: 3px;
+        background: transparent; }
+      .back .form_post .req option {
+        color: #999999 !important;
+        outline: none !important;
+        border: calc( 1vw / 7.5 ) solid #ece8e8 !important;
+        border-radius: 3px !important;
+        background: transparent !important; }
+    .back .form_post .submit {
+      width: 100%;
+      height: calc( 75vw / 7.5 ); }
+
+/*# sourceMappingURL=qby_wkb1_bjcd.css.map */

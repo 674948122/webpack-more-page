@@ -1,0 +1,109 @@
+@font-face 
+    font-family: DS-DIGIT
+    src: url('../css/fonts/DS-DIGIT.ttf')
+
+iframe
+    display: none
+.back
+    position: relative
+    width: calc( 750vw / 7.5 )
+    height: calc( 2204vw / 7.5 )
+    background: url('../img/qby_wkb1_bjd_back.jpg') no-repeat
+    background-size: 100% 100%
+    overflow-x: hidden
+    .show_city_qby
+        position: absolute
+        top: calc( 218vw / 7.5 )
+        left: calc( 194vw / 7.5 )
+        color: #ffffff
+        font-size: calc( 27vw / 7.5 )
+        height: calc( 27vw / 7.5 )
+        line-height: calc( 27vw / 7.5 )
+    .money
+        position: absolute
+        top: calc( 1707vw / 7.5 )
+        left: calc( 50% - 600vw / 7.5 / 2 )
+        display: flex
+        flex-direction: column
+        width: calc( 600vw / 7.5 )
+        height: calc( 280 / 7.5 )
+        .row
+            display: flex
+            flex-direction: row
+            margin-bottom: calc( 20vw / 7.5 )
+            &:last-child
+                margin-bottom: 0
+            .item
+                width: calc( 290vw / 7.5 )
+                height: calc( 80vw / 7.5 )
+                line-height: calc( 80vw / 7.5 )
+                padding-left: calc( 28vw / 7.5 )
+                font-size: calc( 28vw / 7.5 )
+                color: #666666
+                display: flex
+                flex-direction: row
+                .label
+                    display: inline-block
+                    text-align-last: justify
+                    width: calc( 148vw / 7.5 )
+
+    .number
+        position: absolute
+        font-size: calc( 85vw / 7.5 )
+        color: #ffffff
+        font-family: DS-DIGIT
+        width: calc( 334vw / 7.5 )
+        height: calc( 54vw / 7.5 )
+        line-height: calc( 54vw / 7.5 )
+        top: calc( 1571vw / 7.5 )
+        right: calc( 100vw / 7.5 )
+        text-align: right
+    .form_post 
+        position: absolute
+        width: calc( 650vw / 7.5 )
+        height: calc( 420vw / 7.5 )
+        &.form_one 
+            top: calc( 1060vw / 7.5 )
+            left: calc( 50% - 650vw / 7.5 / 2 )
+        input
+            width: 100%
+            height: calc( 76vw / 7.5 )
+            margin-bottom: calc( 10vw / 7.5 )
+            text-indent: calc( 20vw / 7.5 )
+            color: #999999
+            border: 0
+            background: transparent
+            outline: none
+        .req
+            position: relative
+            display: flex
+            justify-content: space-between
+            span
+                font-size: calc( 12vw / 7.5 )
+                color: #ffffff
+                position: absolute
+                line-height: calc( 76vw / 7.5 )
+                top: 0
+                right: calc( 15vw / 7.5)
+                display: inline-block
+                opacity: .5
+            select
+                width: calc( 210vw / 7.5 )
+                height: calc( 80vw / 7.5 )
+                margin-bottom: calc( 10vw / 7.5 )
+                text-indent: calc( 20vw / 7.5 )
+                color: #999999
+                outline: none
+                border: calc( 1vw / 7.5 ) solid #cccaca
+                border-radius: 3px
+                background: transparent
+            
+            option
+                color: #999999 !important
+                outline: none !important
+                border: calc( 1vw / 7.5 ) solid #cccaca !important
+                border-radius: 3px !important
+                background: transparent !important
+        .submit
+            width: 100%
+            height: calc( 75vw / 7.5 )
