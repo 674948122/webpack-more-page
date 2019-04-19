@@ -473,14 +473,14 @@ function createScript_BaiduOCPC() {
     str += "    </script>\n";
     $('head').append(str);
 
-    let str2 = "    <script>\n";
-    str2 += " $(function () {";
-    str2 += "    $('form').submit(function () {";
-    str2 += "        window._agl && window._agl.push(['track', ['success', { t: 3 }]]);";
-    str2 += "    });";
-    str2 += "  });";
-    str2 += "    </script>\n";
-    $('body').append(str2);
+    // let str2 = "    <script>\n";
+    // str2 += " $(function () {";
+    // str2 += "    $('form').submit(function () {";
+    // str2 += "        window._agl && window._agl.push(['track', ['success', { t: 3 }]]);";
+    // str2 += "    });";
+    // str2 += "  });";
+    // str2 += "    </script>\n";
+    // $('body').append(str2);
 }
 
 //初始化
