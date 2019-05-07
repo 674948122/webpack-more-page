@@ -52,6 +52,8 @@ module.exports = {
         fghcd_wkb2_pc: './src/fghcd_wkb2_pc.js',
         mzxq_wkb3: './src/mzxq_wkb3.js',
         mzxq_wkb3_pc: './src/mzxq_wkb3_pc.js',
+        fghcdb_wkb2: './src/fghcdb_wkb2.js',
+        fghcdb_wkb2_pc: './src/fghcdb_wkb2_pc.js',
     },
     // 出口文件配置项
     output: {
@@ -505,6 +507,34 @@ module.exports = {
             filename: "mzxq_wkb3_pc.html",
             title: "迷住高端一体化软装服务",
             chunks:['mzxq_wkb3_pc'], //添加引入的js,也就是entry中的key
+            favicon: './favicon.ico',//添加特定的 favicon 路径到输出的 HTML 文件中。
+            inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
+            showErrors:true,//是否将错误信息输出到html页面中
+        }),
+        new htmlPlugin({
+            minify: { //是对html文件进行压缩
+                removeAttributeQuotes: true,  //removeAttrubuteQuotes是却掉属性的双引号。
+                collapseWhitespace: true //折叠空白区域 也就是压缩代码
+            },
+            hash: true, //为了开发中js有缓存效果，所以加入hash，这样可以有效避免缓存JS。
+            template:'./src/fghcdb_wkb2.html', //是要打包的html模版路径和文件名称。
+            filename: "fghcdb_wkb2.html",
+            title: "成都5.18峰格汇盛装开业",
+            chunks:['fghcdb_wkb2'], //添加引入的js,也就是entry中的key
+            favicon: './favicon.ico',//添加特定的 favicon 路径到输出的 HTML 文件中。
+            inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
+            showErrors:true,//是否将错误信息输出到html页面中
+        }),
+        new htmlPlugin({
+            minify: { //是对html文件进行压缩
+                removeAttributeQuotes: true,  //removeAttrubuteQuotes是却掉属性的双引号。
+                collapseWhitespace: true //折叠空白区域 也就是压缩代码
+            },
+            hash: true, //为了开发中js有缓存效果，所以加入hash，这样可以有效避免缓存JS。
+            template:'./src/fghcdb_wkb2_pc.html', //是要打包的html模版路径和文件名称。
+            filename: "fghcdb_wkb2_pc.html",
+            title: "成都5.18峰格汇盛装开业",
+            chunks:['fghcdb_wkb2_pc'], //添加引入的js,也就是entry中的key
             favicon: './favicon.ico',//添加特定的 favicon 路径到输出的 HTML 文件中。
             inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
             showErrors:true,//是否将错误信息输出到html页面中
