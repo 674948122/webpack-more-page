@@ -32,7 +32,7 @@ function randomNum(minNum,maxNum){
     } 
 } 
 //2999--99999
-var start = '2019-05-18';
+var start = '2019-05-01';
 var staT = new Date(start);
 var now = new Date();
 //两个时间相差小时 兼容firefox chrome
@@ -51,5 +51,6 @@ function datedifference(sDate1, sDate2) {    //sDate1和sDate2是2006-12-18格�
 var c = datedifference(staT, now);//相差小时
 c = Math.round( c / 4.8)
 //console.log(c)
-$('.people_num').html(30 + c)
+let x = (c/60)%2 < 1 ? (c%60) : 60-(c%60)
+$('.people_num').html(x)
 

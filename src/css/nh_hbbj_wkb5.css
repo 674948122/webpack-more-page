@@ -1,0 +1,85 @@
+@font-face {
+  font-family: DS-DIGIT;
+  src: url("../css/fonts/DS-DIGIT.ttf"); }
+iframe {
+  display: none; }
+
+.back {
+  position: relative;
+  width: calc( 750vw / 7.5 );
+  height: calc( 7620vw / 7.5 );
+  background: url("../img/nh_hbbj_wkb5_back.jpg") no-repeat;
+  background-size: 100% 100%;
+  overflow-x: hidden; }
+  .back .swipper {
+    position: absolute; }
+    .back .swipper.swiper_one {
+      width: calc( 640vw  / 7.5 );
+      height: calc( 360vw / 7.5 );
+      top: calc( 3147vw / 7.5 );
+      left: calc( 50% - 640vw  / 7.5 / 2 ); }
+      .back .swipper.swiper_one .swiper-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden; }
+        .back .swipper.swiper_one .swiper-container .one {
+          background: url("../img/nh_hbbj_wkb5_1.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_one .swiper-container .two {
+          background: url("../img/nh_hbbj_wkb5_2.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_one .swiper-container .three {
+          background: url("../img/nh_hbbj_wkb5_3.jpg") no-repeat;
+          background-size: 100% 100%; }
+      .back .swipper.swiper_one .swiper-pagination {
+        width: 100%;
+        left: 0;
+        bottom: calc( -30vw / 7.5 );
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+        .back .swipper.swiper_one .swiper-pagination span {
+          background: #999999;
+          margin-right: calc( 6vw / 7.5 );
+          outline: none;
+          width: calc( 23vw / 7.5 );
+          height: calc( 2vw / 7.5 ); }
+          .back .swipper.swiper_one .swiper-pagination span.swiper-pagination-bullet-active {
+            background: #14433a; }
+  .back .form_post {
+    position: absolute;
+    width: calc( 622vw / 7.5 ); }
+    .back .form_post.form_one {
+      top: calc( 1258vw / 7.5 );
+      left: calc( 50% - 622vw / 7.5 / 2 ); }
+    .back .form_post.form_two {
+      top: calc( 7063vw / 7.5 );
+      left: calc( 50% - 622vw / 7.5 / 2 ); }
+    .back .form_post input {
+      width: 100%;
+      height: calc( 76vw / 7.5 );
+      margin-bottom: calc( 10vw / 7.5 );
+      text-indent: calc( 20vw / 7.5 );
+      color: #999999;
+      border: 0;
+      background: transparent;
+      outline: none; }
+    .back .form_post .req {
+      position: relative;
+      display: flex;
+      justify-content: space-between; }
+      .back .form_post .req span {
+        font-size: calc( 12vw / 7.5 );
+        color: #ffffff;
+        position: absolute;
+        line-height: calc( 76vw / 7.5 );
+        top: 0;
+        right: calc( 15vw / 7.5);
+        display: inline-block;
+        opacity: 0.5; }
+    .back .form_post .submit {
+      width: 100%;
+      height: calc( 75vw / 7.5 ); }
+
+/*# sourceMappingURL=nh_hbbj_wkb5.css.map */

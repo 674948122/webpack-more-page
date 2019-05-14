@@ -1,0 +1,257 @@
+.Common_HeadTopics {
+  width: 100%;
+  height: 54px;
+  top: 0px;
+  position: fixed;
+  background-color: #000000;
+  z-index: 10; }
+  .Common_HeadTopics .eff {
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%; }
+    .Common_HeadTopics .eff .companyLogo {
+      width: 369px;
+      height: 44px;
+      margin-top: 5px;
+      background: url("../img/pc_logo.jpg") no-repeat;
+      float: left; }
+    .Common_HeadTopics .eff .nav {
+      width: 590px;
+      float: left;
+      height: 100%;
+      margin-left: 30px; }
+      .Common_HeadTopics .eff .nav a {
+        float: left;
+        display: block;
+        height: 100%;
+        color: white;
+        line-height: 54px;
+        padding: 0 20px;
+        font-size: 14px;
+        text-decoration: none;
+        font-family: "Microsoft YaHei"; }
+        .Common_HeadTopics .eff .nav a:hover {
+          color: #b19667; }
+    .Common_HeadTopics .eff .phone {
+      float: left;
+      width: 164px;
+      height: 100%;
+      line-height: 54px; }
+      .Common_HeadTopics .eff .phone span {
+        margin-left: 10px;
+        color: white;
+        font-size: 18px; }
+
+.back {
+  margin-top: 54px;
+  min-width: 1200px;
+  width: 100%;
+  height: 6617px;
+  background: url("../img/fgh_bssj_zfs3_pc_back.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; }
+  .back .inner {
+    width: 1200px;
+    height: 100%;
+    background: url("../img/fgh_bssj_zfs3_pc_inner.png") no-repeat;
+    position: relative;
+    background-size: 100% 100%; }
+    .back .inner .head {
+      position: absolute;
+      top: 0;
+      left: -360px; }
+    .back .inner #server {
+      position: absolute;
+      width: 526px;
+      height: 59px;
+      top: 3324px;
+      left: 336px; }
+    .back .inner .yuanqiu {
+      position: absolute;
+      top: 3932px;
+      left: -67px; }
+    .back .inner .peitu {
+      position: absolute;
+      top: 849px;
+      left: -74px; }
+    .back .inner .bs {
+      position: absolute;
+      top: 2109px;
+      left: -14px; }
+    .back .inner .swipper {
+      position: absolute; }
+      .back .inner .swipper.swiper_one {
+        width: 958px;
+        height: 553px;
+        top: 4687px;
+        left: 121px; }
+        .back .inner .swipper.swiper_one .swiper-container {
+          width: 100%;
+          height: 100%;
+          overflow: hidden; }
+          .back .inner .swipper.swiper_one .swiper-container .one {
+            background: url("../img/fgh_bssj_zfs3_1.jpg") no-repeat;
+            background-size: 100% 100%; }
+          .back .inner .swipper.swiper_one .swiper-container .two {
+            background: url("../img/fgh_bssj_zfs3_2.jpg") no-repeat;
+            background-size: 100% 100%; }
+          .back .inner .swipper.swiper_one .swiper-container .three {
+            background: url("../img/fgh_bssj_zfs3_3.jpg") no-repeat;
+            background-size: 100% 100%; }
+          .back .inner .swipper.swiper_one .swiper-container .four {
+            background: url("../img/fgh_bssj_zfs3_4.jpg") no-repeat;
+            background-size: 100% 100%; }
+          .back .inner .swipper.swiper_one .swiper-container .five {
+            background: url("../img/fgh_bssj_zfs3_5.jpg") no-repeat;
+            background-size: 100% 100%; }
+        .back .inner .swipper.swiper_one .swiper-pagination {
+          width: 100%;
+          left: 0;
+          bottom: -30px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center; }
+          .back .inner .swipper.swiper_one .swiper-pagination span {
+            background: #615d5c;
+            margin-right: 6px;
+            outline: none;
+            width: 23px;
+            height: 4px;
+            border-radius: 4px; }
+            .back .inner .swipper.swiper_one .swiper-pagination span.swiper-pagination-bullet-active {
+              background: #e3cfcd; }
+        .back .inner .swipper.swiper_one .swiper-button-prev {
+          background-image: url("../img/fgh_bssj_zfs3_left.png");
+          width: 24px;
+          height: 45px;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          left: -44px; }
+        .back .inner .swipper.swiper_one .swiper-button-next {
+          background-image: url("../img/fgh_bssj_zfs3_right.png");
+          width: 24px;
+          height: 45px;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          right: -44px; }
+    .back .inner .from_head {
+      position: fixed;
+      width: 1200px;
+      height: 47px;
+      bottom: 121px;
+      background: url("../img/fgh_bssj_zfs3_pc_from_head.png") no-repeat;
+      background-size: 100% 100%;
+      z-index: 999; }
+    .back .inner .form_post {
+      z-index: 999;
+      position: fixed;
+      width: 1200px;
+      height: 121px;
+      display: flex;
+      flex-direction: row;
+      background: url("../img/fgh_bssj_zfs3_pc_from.png") no-repeat;
+      background-size: 100% 100%; }
+      .back .inner .form_post.form_one {
+        bottom: 0; }
+      .back .inner .form_post input {
+        height: 60px;
+        width: 268px;
+        border: 0;
+        outline: none;
+        background: transparent;
+        font-size: 17px;
+        box-sizing: border-box;
+        text-indent: 20px;
+        color: #b8909f;
+        font-size: 18px;
+        margin-top: 5px; }
+        .back .inner .form_post input::-webkit-input-placeholder {
+          color: #b8909f; }
+      .back .inner .form_post .req {
+        position: relative;
+        height: 100%;
+        margin-right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .back .inner .form_post .req.first {
+          margin-left: 50px; }
+        .back .inner .form_post .req.last {
+          margin-right: 0; }
+        .back .inner .form_post .req span {
+          color: #b8909f;
+          position: absolute;
+          top: 23px;
+          right: 12px;
+          font-size: 18px; }
+      .back .inner .form_post .submit {
+        width: 100%;
+        height: calc( 75vw / 7.5 );
+        margin-right: 50px; }
+    .back .inner .custom_service {
+      position: fixed;
+      right: 0;
+      top: 40%;
+      width: 92px;
+      z-index: 10;
+      overflow: hidden;
+      border: 1px solid #dddddd;
+      display: flex;
+      flex-direction: column; }
+      .back .inner .custom_service .item {
+        display: inline-block;
+        width: 100%;
+        height: 92px;
+        background: #ffffff;
+        border-bottom: 1px solid #dddddd;
+        text-align: center;
+        outline: none;
+        text-decoration: none;
+        color: #333333; }
+        .back .inner .custom_service .item .img {
+          margin: 0 auto; }
+        .back .inner .custom_service .item .online_server {
+          width: 58px;
+          height: 51px;
+          background: url("../img/pc_slider1.gif") no-repeat;
+          background-size: 100% 100%; }
+        .back .inner .custom_service .item .get_price {
+          margin-top: 20px;
+          width: 28px;
+          height: 34px;
+          background: url("../img/pc_slider2.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .inner .custom_service .item .to_top {
+          margin-top: 20px;
+          width: 53px;
+          height: 19px;
+          background: url("../img/pc_slider3.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .inner .custom_service .item:last-child {
+          border-bottom: 0; }
+        .back .inner .custom_service .item:hover {
+          color: #ffffff;
+          background: #b69454; }
+          .back .inner .custom_service .item:hover .online_server {
+            background: url("../img/pc_slider1.png") no-repeat; }
+          .back .inner .custom_service .item:hover .get_price {
+            background: url("../img/pc_slider2.png") no-repeat; }
+          .back .inner .custom_service .item:hover .to_top {
+            background: url("../img/pc_slider3.png") no-repeat; }
+
+.fixed_from_back {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 1920px;
+  height: 122px;
+  opacity: 0.8;
+  background: #000000;
+  z-index: 888; }
+
+/*# sourceMappingURL=fgh_bssj_zfs3_pc.css.map */

@@ -23,7 +23,7 @@ module.exports = {
     mode: 'development',
     // 入口文件配置项
     entry: {
-        // babelPolyfill:'babel-polyfill',//添加了这个东西，才能完美的将ES6转码,否则Babel默认只转换新的JavaScript句法（syntax），而不转换新的API，如：Set Map
+        babelPolyfill:'babel-polyfill',//添加了这个东西，才能完美的将ES6转码,否则Babel默认只转换新的JavaScript句法（syntax），而不转换新的API，如：Set Map
         // 入口js文件的路径
         // main: './src/main.js'
         qby_dq_318: './src/qby_dq_318.js',
@@ -54,6 +54,15 @@ module.exports = {
         mzxq_wkb3_pc: './src/mzxq_wkb3_pc.js',
         fghcdb_wkb2: './src/fghcdb_wkb2.js',
         fghcdb_wkb2_pc: './src/fghcdb_wkb2_pc.js',
+        fgh_lrf_zfs2: './src/fgh_lrf_zfs2.js',
+        fgh_lrf_zfs2_pc: './src/fgh_lrf_zfs2_pc.js',
+        hc_hb_wkb4: './src/hc_hb_wkb4.js',
+        hc_hb_wkb4_pc: './src/hc_hb_wkb4_pc.js',
+        // qgkjby0515: './src/qgkjby0515.js',
+        nh_hbbj_wkb5: './src/nh_hbbj_wkb5.js',
+        nh_hbbj_wkb5_pc: './src/nh_hbbj_wkb5_pc.js',
+        fgh_bssj_zfs3: './src/fgh_bssj_zfs3.js',
+        fgh_bssj_zfs3_pc: './src/fgh_bssj_zfs3_pc.js',
     },
     // 出口文件配置项
     output: {
@@ -539,6 +548,133 @@ module.exports = {
             inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
             showErrors:true,//是否将错误信息输出到html页面中
         }),
+        new htmlPlugin({
+            minify: { //是对html文件进行压缩
+                removeAttributeQuotes: true,  //removeAttrubuteQuotes是却掉属性的双引号。
+                collapseWhitespace: true //折叠空白区域 也就是压缩代码
+            },
+            hash: true, //为了开发中js有缓存效果，所以加入hash，这样可以有效避免缓存JS。
+            template:'./src/fgh_lrf_zfs2.html', //是要打包的html模版路径和文件名称。
+            filename: "fgh_lrf_zfs2.html",
+            title: "0元定制-母亲节装修设计方案",
+            chunks:['fgh_lrf_zfs2'], //添加引入的js,也就是entry中的key
+            favicon: './favicon.ico',//添加特定的 favicon 路径到输出的 HTML 文件中。
+            inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
+            showErrors:true,//是否将错误信息输出到html页面中
+        }),
+        new htmlPlugin({
+            minify: { //是对html文件进行压缩
+                removeAttributeQuotes: true,  //removeAttrubuteQuotes是却掉属性的双引号。
+                collapseWhitespace: true //折叠空白区域 也就是压缩代码
+            },
+            hash: true, //为了开发中js有缓存效果，所以加入hash，这样可以有效避免缓存JS。
+            template:'./src/fgh_lrf_zfs2_pc.html', //是要打包的html模版路径和文件名称。
+            filename: "fgh_lrf_zfs2_pc.html",
+            title: "0元定制-母亲节装修设计方案",
+            chunks:['fgh_lrf_zfs2_pc'], //添加引入的js,也就是entry中的key
+            favicon: './favicon.ico',//添加特定的 favicon 路径到输出的 HTML 文件中。
+            inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
+            showErrors:true,//是否将错误信息输出到html页面中
+        }),
+        new htmlPlugin({
+            minify: { //是对html文件进行压缩
+                removeAttributeQuotes: true,  //removeAttrubuteQuotes是却掉属性的双引号。
+                collapseWhitespace: true //折叠空白区域 也就是压缩代码
+            },
+            hash: true, //为了开发中js有缓存效果，所以加入hash，这样可以有效避免缓存JS。
+            template:'./src/hc_hb_wkb4.html', //是要打包的html模版路径和文件名称。
+            filename: "hc_hb_wkb4.html",
+            title: "汇巢别墅：更环保的别墅装饰",
+            chunks:['hc_hb_wkb4'], //添加引入的js,也就是entry中的key
+            favicon: './favicon.ico',//添加特定的 favicon 路径到输出的 HTML 文件中。
+            inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
+            showErrors:true,//是否将错误信息输出到html页面中
+        }),
+        new htmlPlugin({
+            minify: { //是对html文件进行压缩
+                removeAttributeQuotes: true,  //removeAttrubuteQuotes是却掉属性的双引号。
+                collapseWhitespace: true //折叠空白区域 也就是压缩代码
+            },
+            hash: true, //为了开发中js有缓存效果，所以加入hash，这样可以有效避免缓存JS。
+            template:'./src/hc_hb_wkb4_pc.html', //是要打包的html模版路径和文件名称。
+            filename: "hc_hb_wkb4_pc.html",
+            title: "汇巢别墅：更环保的别墅装饰",
+            chunks:['hc_hb_wkb4_pc'], //添加引入的js,也就是entry中的key
+            favicon: './favicon.ico',//添加特定的 favicon 路径到输出的 HTML 文件中。
+            inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
+            showErrors:true,//是否将错误信息输出到html页面中
+        }),
+        // new htmlPlugin({
+        //     minify: { //是对html文件进行压缩
+        //         removeAttributeQuotes: true,  //removeAttrubuteQuotes是却掉属性的双引号。
+        //         collapseWhitespace: true //折叠空白区域 也就是压缩代码
+        //     },
+        //     hash: true, //为了开发中js有缓存效果，所以加入hash，这样可以有效避免缓存JS。
+        //     template:'./src/qgkjby0515.html', //是要打包的html模版路径和文件名称。
+        //     filename: "qgkjby0515.html",
+        //     title: "业之峰装饰 全国征集榜样设计",
+        //     chunks:['qgkjby0515'], //添加引入的js,也就是entry中的key
+        //     favicon: './favicon.ico',//添加特定的 favicon 路径到输出的 HTML 文件中。
+        //     inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
+        //     showErrors:true,//是否将错误信息输出到html页面中
+        // }),
+        new htmlPlugin({
+            minify: { //是对html文件进行压缩
+                removeAttributeQuotes: true,  //removeAttrubuteQuotes是却掉属性的双引号。
+                collapseWhitespace: true //折叠空白区域 也就是压缩代码
+            },
+            hash: true, //为了开发中js有缓存效果，所以加入hash，这样可以有效避免缓存JS。
+            template:'./src/nh_hbbj_wkb5.html', //是要打包的html模版路径和文件名称。
+            filename: "nh_hbbj_wkb5.html",
+            title: "一站式环保装修报价",
+            chunks:['nh_hbbj_wkb5'], //添加引入的js,也就是entry中的key
+            favicon: './favicon.ico',//添加特定的 favicon 路径到输出的 HTML 文件中。
+            inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
+            showErrors:true,//是否将错误信息输出到html页面中
+        }),
+        new htmlPlugin({
+            minify: { //是对html文件进行压缩
+                removeAttributeQuotes: true,  //removeAttrubuteQuotes是却掉属性的双引号。
+                collapseWhitespace: true //折叠空白区域 也就是压缩代码
+            },
+            hash: true, //为了开发中js有缓存效果，所以加入hash，这样可以有效避免缓存JS。
+            template:'./src/nh_hbbj_wkb5_pc.html', //是要打包的html模版路径和文件名称。
+            filename: "nh_hbbj_wkb5_pc.html",
+            title: "一站式环保装修报价",
+            chunks:['nh_hbbj_wkb5_pc'], //添加引入的js,也就是entry中的key
+            favicon: './favicon.ico',//添加特定的 favicon 路径到输出的 HTML 文件中。
+            inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
+            showErrors:true,//是否将错误信息输出到html页面中
+        }),
+        new htmlPlugin({
+            minify: { //是对html文件进行压缩
+                removeAttributeQuotes: true,  //removeAttrubuteQuotes是却掉属性的双引号。
+                collapseWhitespace: true //折叠空白区域 也就是压缩代码
+            },
+            hash: true, //为了开发中js有缓存效果，所以加入hash，这样可以有效避免缓存JS。
+            template:'./src/fgh_bssj_zfs3.html', //是要打包的html模版路径和文件名称。
+            filename: "fgh_bssj_zfs3.html",
+            title: "业之峰高端别墅大宅私人定制设计-专业引领新潮流",
+            chunks:['fgh_bssj_zfs3'], //添加引入的js,也就是entry中的key
+            favicon: './favicon.ico',//添加特定的 favicon 路径到输出的 HTML 文件中。
+            inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
+            showErrors:true,//是否将错误信息输出到html页面中
+        }),
+        new htmlPlugin({
+            minify: { //是对html文件进行压缩
+                removeAttributeQuotes: true,  //removeAttrubuteQuotes是却掉属性的双引号。
+                collapseWhitespace: true //折叠空白区域 也就是压缩代码
+            },
+            hash: true, //为了开发中js有缓存效果，所以加入hash，这样可以有效避免缓存JS。
+            template:'./src/fgh_bssj_zfs3_pc.html', //是要打包的html模版路径和文件名称。
+            filename: "fgh_bssj_zfs3_pc.html",
+            title: "业之峰高端别墅大宅私人定制设计-专业引领新潮流",
+            chunks:['fgh_bssj_zfs3_pc'], //添加引入的js,也就是entry中的key
+            favicon: './favicon.ico',//添加特定的 favicon 路径到输出的 HTML 文件中。
+            inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
+            showErrors:true,//是否将错误信息输出到html页面中
+        }),
+
     ],
     // 配置webpack开发服务功能
     devServer: {

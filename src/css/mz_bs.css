@@ -1,5 +1,5 @@
-iframe {
-  display: none; }
+body {
+  overflow: scroll !important; }
 
 .back {
   position: relative;

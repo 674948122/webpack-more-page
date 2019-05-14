@@ -1,0 +1,196 @@
+@charset "UTF-8";
+body {
+  overflow: scroll !important; }
+
+.wrap {
+  padding-bottom: calc( 25vw / 7.5 ); }
+
+.wrap .t {
+  position: relative; }
+
+.wrap .t img {
+  display: block;
+  width: 100%;
+  margin-top: -1px; }
+
+.wrap .t2 .content {
+  width: 100%;
+  position: absolute;
+  top: calc( 850vw / 7.5 ); }
+
+.wrap .t2 .content .a {
+  padding-left: calc( 280vw / 7.5 ); }
+
+.wrap .t2 .content .a p {
+  color: #fff;
+  font-size: calc( 38vw / 7.5 ); }
+
+.wrap .t2 .content .a small {
+  display: block;
+  margin-top: calc( 12.5vw / 7.5 );
+  color: #b29961;
+  font-size: calc( 24vw / 7.5 ); }
+
+.wrap .t2 .content #formPostOne {
+  padding: calc( 36.5vw / 7.5 ) calc( 42.5vw / 7.5 ) 0 calc( 43.5vw / 7.5 ); }
+
+.wrap .t2 .content #formPostOne input, .wrap .t2 .content #formPostOne select {
+  width: 100%;
+  font-size: calc( 24vw / 7.5 );
+  padding: calc( 21vw / 7.5 ) calc( 10vw / 7.5 );
+  color: #000;
+  box-sizing: border-box;
+  margin-bottom: calc( 10vw / 7.5 );
+  position: relative;
+  background: rgba(255, 255, 255, 0.7);
+  border: 0;
+  outline: none; }
+
+.wrap .t2 .content #formPostOne .req::before {
+  content: "*";
+  position: absolute;
+  color: #ff0000;
+  right: calc( 65vw / 7.5 );
+  z-index: 8;
+  line-height: calc( 76vw / 7.5 ); }
+
+.wrap .t2 .content #formPostOne .m2::before {
+  content: "m²";
+  position: absolute;
+  color: #333333;
+  right: calc( 55vw / 7.5 );
+  z-index: 8;
+  line-height: calc( 76vw / 7.5 );
+  font-size: calc( 24vw / 7.5 ); }
+
+.wrap .t2 .content #formPostOne .submit {
+  height: calc( 80vw / 7.5 );
+  width: 100%; }
+
+.wrap .zhengjisheji {
+  background-repeat: no-repeat;
+  background: url("../img/qgkjby0515_m3.jpg");
+  background-size: 100%;
+  height: calc( 730vw / 7.5 );
+  padding-top: calc( 960vw / 7.5 );
+  position: relative; }
+
+.wrap .zhengjisheji .bt-bm2 {
+  margin: 0 auto;
+  position: absolute;
+  width: calc( 395vw / 7.5 );
+  height: calc( 60vw / 7.5 );
+  display: block;
+  top: calc( 220vw / 7.5 );
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+.wrap .zhengjisheji h1 {
+  font-size: calc( 50vw / 7.5 );
+  padding: calc( 65vw / 7.5 ) 0 calc( 35vw / 7.5 );
+  color: #fff;
+  text-align: center;
+  font-weight: normal; }
+
+.wrap .zhengjisheji h1 b {
+  font-weight: bold; }
+
+.wrap .zhengjisheji #formPost {
+  padding: 0 calc( 42.5vw / 7.5 ) 0 calc( 43.5vw / 7.5 ); }
+
+.wrap .zhengjisheji #formPost input, .wrap .zhengjisheji #formPost select {
+  width: 100%;
+  font-size: calc( 24vw / 7.5 );
+  padding: calc( 21vw / 7.5 ) calc( 10vw / 7.5 );
+  color: #000;
+  box-sizing: border-box;
+  margin-bottom: calc( 10vw / 7.5 );
+  position: relative;
+  background: rgba(255, 255, 255, 0.7);
+  border: 0;
+  outline: none; }
+
+.wrap .zhengjisheji #formPost .req::before {
+  content: "*";
+  position: absolute;
+  color: #ff0000;
+  right: calc( 65vw / 7.5 );
+  z-index: 8;
+  line-height: calc( 76vw / 7.5 ); }
+
+.wrap .zhengjisheji #formPost .m2::before {
+  content: "m²";
+  position: absolute;
+  color: #333333;
+  right: calc( 55vw / 7.5 );
+  z-index: 8;
+  line-height: calc( 76vw / 7.5 );
+  font-size: calc( 24vw / 7.5 ); }
+
+.wrap .zhengjisheji #formPost .submit {
+  font-size: calc( 35vw / 7.5 );
+  line-height: 2;
+  font-weight: bolder;
+  background-color: #5f4e32;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  letter-spacing: calc( 10vw / 7.5 );
+  margin-top: calc( 7vw / 7.5 ); }
+
+.bottomFixed {
+  position: fixed;
+  bottom: 0;
+  z-index: 9;
+  width: 100%;
+  height: calc( 130vw / 7.5 );
+  background: url("../img/qgkjby0515_b2.png") no-repeat center bottom;
+  background-size: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+  -webkit-justify-content: center;
+  justify-content: center; }
+
+.bottomFixed #b-logo {
+  height: 100%;
+  width: calc( 300vw / 7.5 );
+  position: relative; }
+
+.bottomFixed #b-logo span {
+  position: absolute;
+  font-size: 0.5625rem;
+  color: #fff;
+  top: 0.21875rem;
+  left: 0.625rem; }
+
+.bottomFixed #b-logo small {
+  position: absolute;
+  font-size: 0.3125rem;
+  color: #623806;
+  bottom: 0.51563rem;
+  left: 0.46875rem; }
+
+.bottomFixed #b-kefu {
+  flex: 1;
+  height: 100%; }
+
+.bottomFixed #b-phone {
+  flex: 1;
+  height: 100%; }
+
+.footer {
+  background: #dd9d46;
+  margin-top: -2px; }
+
+.footer .m-footer {
+  padding-top: calc( 35vw / 7.5 );
+  padding-bottom: calc( 100vw / 7.5 );
+  text-align: center;
+  font-size: calc( 22vw / 7.5 );
+  line-height: calc( 40vw / 7.5 );
+  color: #795f3a; }
+
+/*# sourceMappingURL=qgkjby0515.css.map */

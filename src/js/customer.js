@@ -5,6 +5,7 @@ function CreateCompany(id, domain, name) {
     this.name = name;
 }
 
+
 /* 分公司列表处理 */
 var aboutCompany = {
     array: [//数据来源于数据库 2019/02/14
@@ -304,6 +305,7 @@ var customerInit = {
             let company = aboutCompany.getById(customer.bid);
             if (company !== undefined) {
                 $('#show-city,.show-city').text(company['name']);
+                window.city = company['name']
                 if (company['name']=='北京'||company['name']=='保定') {
                     $('.show_city_qby').text(company['name']);
                 }else{
@@ -327,7 +329,7 @@ var customerInit = {
                     if (company !== undefined) {
                         customer.bid = company['id'];
                         $('#show-city,.show-city').text(company['name']);
-                        
+                        window.city = company['name']
                         if (company['name']=='北京'||company['name']=='保定') {
                             $('.show_city_qby').text(company['name']);
                         }else{
@@ -346,7 +348,7 @@ var customerInit = {
     initElement: function () {
         if (customer.ms === 'bdocpc' || customer.ck === 'bdpz-tpzq') {
             //百度ocpc模式代码
-            //console.log('warning:load bdocpc');
+            console.log('warning:load bdocpc');
             createScript_BaiduOCPC();
         }
         if (customer.ms === 'gdtocpc') {
@@ -473,15 +475,17 @@ function createScript_BaiduOCPC() {
     str += "    </script>\n";
     $('head').append(str);
 
-    // let str2 = "    <script>\n";
-    // str2 += " $(function () {";
-    // str2 += "    $('form').submit(function () {";
-    // str2 += "        window._agl && window._agl.push(['track', ['success', { t: 3 }]]);";
-    // str2 += "    });";
-    // str2 += "  });";
-    // str2 += "    </script>\n";
-    // $('body').append(str2);
+    let str2 = "    <script>\n";
+    str2 += " (function () {";
+    str2 += "    $('form').submit(function () {";
+    str2 += "        window._agl && window._agl.push(['track', ['success', { t: 3 }]]);";
+    str2 += "    });";
+    str2 += "  });";
+    str2 += "    </script>\n";
+    $('body').append(str2);
 }
 
 //初始化
 customerInit.init();
+let zoom = '<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">'
+$('head').append(zoom);
