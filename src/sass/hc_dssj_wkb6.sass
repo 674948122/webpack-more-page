@@ -1,0 +1,222 @@
+@font-face 
+    font-family: DS-DIGIT
+    src: url('../css/fonts/DS-DIGIT.ttf')
+
+iframe
+    display: none
+.back
+    position: relative
+    width: calc( 750vw / 7.5 )
+    height: calc( 6574vw / 7.5 )
+    background: url('../img/hc_dssj_wkb6_back.jpg') no-repeat
+    background-size: 100% 100%
+    overflow-x: hidden
+    .form_post 
+        position: absolute
+        width: calc( 622vw / 7.5 )
+        &.form_one 
+            top: calc( 1924vw / 7.5 )
+            left: calc( 50% - 622vw / 7.5 / 2 )
+        &.form_two
+            top: calc( 6171vw / 7.5 )
+            left: calc( 50% - 622vw / 7.5 / 2 )
+            input
+                color: #ffffff
+                &::-webkit-input-placeholder
+                    color: #ffffff
+            .req
+                span
+                    color: #ffffff
+        input
+            width: 100%
+            height: calc( 76vw / 7.5 )
+            margin-bottom: calc( 10vw / 7.5 )
+            text-indent: calc( 20vw / 7.5 )
+            color: #ffffff
+            border: 0
+            background: transparent
+            outline: none
+            &::-webkit-input-placeholder
+                color: #ffffff
+        .req
+            position: relative
+            display: flex
+            justify-content: space-between
+            span
+                font-size: calc( 12vw / 7.5 )
+                color: #999999
+                position: absolute
+                line-height: calc( 76vw / 7.5 )
+                top: 0
+                right: calc( 15vw / 7.5)
+                display: inline-block
+                // opacity: .5
+        .submit
+            width: 100%
+            height: calc( 75vw / 7.5 )
+    .swipper
+        position: absolute
+        &.swiper_one
+            width: calc( 370vw * 3  / 7.5 )
+            height: calc( 488vw / 7.5 )
+            top: calc( 1342vw / 7.5 )
+            left: calc( 50% - 370vw * 3 / 7.5 / 2 )
+            .swiper-container
+                width: 100%
+                height: 100%
+                overflow: hidden
+                .one
+                    background: url('../img/hc_dssj_wkb6_1.png') no-repeat
+                    background-size: 100% 100%
+                .two
+                    background: url('../img/hc_dssj_wkb6_2.png') no-repeat
+                    background-size: 100% 100%
+                .three
+                    background: url('../img/hc_dssj_wkb6_3.png') no-repeat
+                    background-size: 100% 100%
+                .four
+                    background: url('../img/hc_dssj_wkb6_4.png') no-repeat
+                    background-size: 100% 100%
+                .swiper-slide-prev
+                    position: relative
+                    &:after
+                        content: ''
+                        display: inline-block
+                        width: 100%
+                        height: 100%
+                        position: absolute
+                        top: 0
+                        left: 0
+                        background: rgba(0,0,0,.6)
+                .swiper-slide-next
+                    z-index: -1
+                    position: relative
+                    &:after
+                        content: ''
+                        display: inline-block
+                        width: 100%
+                        height: 100%
+                        position: absolute
+                        top: 0
+                        left: 0
+                        background: rgba(0,0,0,.6)
+
+            .swiper-pagination
+                width: 100%
+                left: 0
+                bottom: calc( -34vw / 7.5 )
+                display: flex
+                flex-direction: row
+                justify-content: center
+                align-items: center
+                span
+                    background: #dfcbc4
+                    margin-right: calc( 10vw / 7.5 )
+                    outline: none
+                    width: calc( 30vw / 7.5 )
+                    height: calc( 2vw / 7.5 )
+                    box-sizing: border-box
+                    border: 0
+                    &.swiper-pagination-bullet-active
+                        background: #ffffff
+            // .swiper-button-prev
+            //     background-image: url('../img/fgh_bssj_zfs3_left.png')
+            //     width: calc( 24vw / 7.5 )
+            //     height: calc( 45vw / 7.5 )
+            //     background-repeat: no-repeat
+            //     background-size: 100% 100%
+            //     left: calc( -44vw / 7.5 )
+            // .swiper-button-next
+            //     background-image: url('../img/fgh_bssj_zfs3_right.png')
+            //     width: calc( 24vw / 7.5 )
+            //     height: calc( 45vw / 7.5 )
+            //     background-repeat: no-repeat
+            //     background-size: 100% 100%
+            //     right: calc( -44vw / 7.5 )
+        &.swiper_two
+            width: calc( 370vw * 3  / 7.5 )
+            height: calc( 488vw / 7.5 )
+            top: calc( 5589vw / 7.5 )
+            left: calc( 50% - 370vw * 3 / 7.5 / 2 )
+            .swiper-container
+                width: 100%
+                height: 100%
+                overflow: hidden
+                .one
+                    background: url('../img/hc_dssj_wkb6_1.png') no-repeat
+                    background-size: 100% 100%
+                .two
+                    background: url('../img/hc_dssj_wkb6_2.png') no-repeat
+                    background-size: 100% 100%
+                .three
+                    background: url('../img/hc_dssj_wkb6_3.png') no-repeat
+                    background-size: 100% 100%
+                .four
+                    background: url('../img/hc_dssj_wkb6_4.png') no-repeat
+                    background-size: 100% 100%
+                .swiper-slide-prev
+                    position: relative
+                    &:after
+                        content: ''
+                        display: inline-block
+                        width: 100%
+                        height: 100%
+                        position: absolute
+                        top: 0
+                        left: 0
+                        background: rgba(0,0,0,.6)
+                .swiper-slide-next
+                    z-index: -1
+                    position: relative
+                    &:after
+                        content: ''
+                        display: inline-block
+                        width: 100%
+                        height: 100%
+                        position: absolute
+                        top: 0
+                        left: 0
+                        background: rgba(0,0,0,.6)
+
+            .swiper-pagination
+                width: 100%
+                left: 0
+                bottom: calc( -34vw / 7.5 )
+                display: flex
+                flex-direction: row
+                justify-content: center
+                align-items: center
+                span
+                    background: #dfcbc4
+                    margin-right: calc( 10vw / 7.5 )
+                    outline: none
+                    width: calc( 30vw / 7.5 )
+                    height: calc( 2vw / 7.5 )
+                    box-sizing: border-box
+                    border: 0
+                    &.swiper-pagination-bullet-active
+                        background: #ffffff
+            // .swiper-button-prev
+            //     background-image: url('../img/fgh_bssj_zfs3_left.png')
+            //     width: calc( 24vw / 7.5 )
+            //     height: calc( 45vw / 7.5 )
+            //     background-repeat: no-repeat
+            //     background-size: 100% 100%
+            //     left: calc( -44vw / 7.5 )
+            // .swiper-button-next
+            //     background-image: url('../img/fgh_bssj_zfs3_right.png')
+            //     width: calc( 24vw / 7.5 )
+            //     height: calc( 45vw / 7.5 )
+            //     background-repeat: no-repeat
+            //     background-size: 100% 100%
+            // 
+.footer
+    background: #bf9689
+    margin-top: -1px
+    .m-footer
+        padding-top: calc( 40vw / 7.5 )
+        padding-bottom: calc( 100vw / 7.5 )
+        text-align: center
+        font-size: calc( 23vw / 7.5 )
+        line-height: calc( 50vw / 7.5 )
+        color: #fff
