@@ -13,8 +13,8 @@ function resolve (dir) {
 // console.log(resolve ('abcdefghijklmnop'));
 
 var website ={
-    // publicPath:"https://dsp2.yzf.com.cn/"  //线上环境
-    publicPath:"http://localhost:8081/" //本地调试环境
+    publicPath:"https://dsp2.yzf.com.cn/"  //线上环境
+    // publicPath:"http://localhost:8081/" //本地调试环境
 }
 // 这里的IP和端口，是你本机的ip或者是你devServer配置的IP和端口。
 
@@ -71,7 +71,9 @@ module.exports = {
         fgh_zxbj_zfs5: './src/fgh_zxbj_zfs5.js',
         fgh_zxbj_zfs5_pc: './src/fgh_zxbj_zfs5_pc.js',
         hc_dssj_wkb6: './src/hc_dssj_wkb6.js',
-        hc_dssj_wkb6_pc: './src/hc_dssj_wkb6_pc.js'
+        hc_dssj_wkb6_pc: './src/hc_dssj_wkb6_pc.js',
+        hcpp_js1: './src/hcpp_js1.js',
+        hcpp_js1_pc: './src/hcpp_js1_pc.js'
     },
     // 出口文件配置项
     output: {
@@ -825,6 +827,35 @@ module.exports = {
             inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
             showErrors:true,//是否将错误信息输出到html页面中
         }),
+        new htmlPlugin({
+            minify: { //是对html文件进行压缩
+                removeAttributeQuotes: true,  //removeAttrubuteQuotes是却掉属性的双引号。
+                collapseWhitespace: true //折叠空白区域 也就是压缩代码
+            },
+            hash: true, //为了开发中js有缓存效果，所以加入hash，这样可以有效避免缓存JS。
+            template:'./src/hcpp_js1.html', //是要打包的html模版路径和文件名称。
+            filename: "hcpp_js1.html",
+            title: "汇巢别墅装饰，22年沉淀，打造精益求精的生活",
+            chunks:['hcpp_js1'], //添加引入的js,也就是entry中的key
+            favicon: './favicon.ico',//添加特定的 favicon 路径到输出的 HTML 文件中。
+            inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
+            showErrors:true,//是否将错误信息输出到html页面中
+        }),
+        new htmlPlugin({
+            minify: { //是对html文件进行压缩
+                removeAttributeQuotes: true,  //removeAttrubuteQuotes是却掉属性的双引号。
+                collapseWhitespace: true //折叠空白区域 也就是压缩代码
+            },
+            hash: true, //为了开发中js有缓存效果，所以加入hash，这样可以有效避免缓存JS。
+            template:'./src/hcpp_js1_pc.html', //是要打包的html模版路径和文件名称。
+            filename: "hcpp_js1_pc.html",
+            title: "汇巢别墅装饰，22年沉淀，打造精益求精的生活",
+            chunks:['hcpp_js1_pc'], //添加引入的js,也就是entry中的key
+            favicon: './favicon.ico',//添加特定的 favicon 路径到输出的 HTML 文件中。
+            inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
+            showErrors:true,//是否将错误信息输出到html页面中
+        }),
+
 
     ],
     // 配置webpack开发服务功能
