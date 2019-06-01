@@ -1,0 +1,130 @@
+@font-face 
+    font-family: DS-DIGIT
+    src: url('../css/fonts/DS-DIGIT.ttf')
+
+iframe
+    display: none
+.back
+    position: relative
+    width: calc( 750vw / 7.5 )
+    height: calc( 5599vw / 7.5 )
+    background: url('../img/fgh_zxbj_zfs5_back.jpg') no-repeat
+    background-size: 100% 100%
+    overflow-x: hidden
+    .tab
+        position: absolute
+        top: calc( 4844vw / 7.5 )
+        width: calc( 495vw / 7.5 )
+        height: calc( 96vw / 7.5 )
+        left: calc( 50% - 495vw / 7.5 / 2 )
+        display: flex
+        flex-direction: row
+        p
+            flex: 1
+            margin-right: calc( 15vw / 7.5 )
+            height: calc( 87vw / 7.5 )
+            box-sizing: border-box
+            display: flex
+            justify-content: center
+            align-items: center
+            color: #ffffff
+            border-radius: calc( 10vw / 7.5 )
+            border: 1px solid #ffffff
+            font-size: calc( 24vw / 7.5 )
+            position: relative
+            &.active
+                color: #2d4550
+                background: #edcece
+                border: 0
+                &::after
+                    content: ''
+                    display: block
+                    width: 0
+                    height: 0
+                    border-width: calc( 10vw / 7.5 ) calc( 10vw / 7.5 ) 0
+                    border-style: solid
+                    border-color: #edcece transparent transparent
+                    position: absolute
+                    bottom: calc( -10vw / 7.5 )
+                    left: calc( 50% - 5vw / 7.5 )
+                
+            &:last-child
+                margin-right: 0
+    .form_post 
+        position: absolute
+        
+        &.form_one 
+            width: calc( 470vw / 7.5 )
+            top: calc( 1080vw / 7.5 )
+            left: calc( 210vw / 7.5 )
+        &.form_two
+            width: calc( 606vw / 7.5 )
+            top: calc( 5015vw / 7.5 )
+            left: calc( 50% - 606vw / 7.5 / 2 )
+            input
+                height: calc( 73vw / 7.5 )
+                margin-bottom: calc( 14vw / 7.5 )
+                color: #666666
+                &::-webkit-input-placeholder
+                    color: #666666
+            .req
+                span
+                    color: #666666
+                    opacity: 1
+            .submit
+                position: static
+                width: 100%
+                height: calc( 73vw / 7.5 )
+        input
+            width: 100%
+            height: calc( 75vw / 7.5 )
+            margin-bottom: calc( 20vw / 7.5 )
+            text-indent: calc( 20vw / 7.5 )
+            color: #ffffff
+            border: 0
+            background: transparent
+            outline: none
+            &::-webkit-input-placeholder
+                color: #ffffff
+        .req
+            position: relative
+            display: flex
+            justify-content: space-between
+            span
+                font-size: calc( 12vw / 7.5 )
+                color: #ffffff
+                position: absolute
+                line-height: calc( 75vw / 7.5 )
+                top: 0
+                right: calc( 15vw / 7.5)
+                display: inline-block
+                opacity: .5
+            select
+                flex: 1
+                margin-right: calc( 12vw / 7.5 )
+                height: calc( 75vw / 7.5 )
+                margin-bottom: calc( 20vw / 7.5 )
+                text-indent: calc( 20vw / 7.5 )
+                color: #ffffff
+                outline: none
+                border: 0
+                border-radius: 3px
+                background: #c0a0a0
+                text-align: center
+                &.last
+                    margin-right: 0
+            
+            option
+                color: #ffffff !important
+                outline: none !important
+                border: 0 !important
+                border-radius: 3px !important
+                background: #c0a0a0 !important
+                text-align: center
+        .submit
+            position: absolute
+            left: calc( -147vw / 7.5 )
+            bottom: calc( -105vw / 7.5 )
+            width: calc( 616vw / 7.5 )
+            height: calc( 87vw / 7.5 )
+   

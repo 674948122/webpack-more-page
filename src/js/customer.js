@@ -385,6 +385,12 @@ $(".submit").click(function () {
         alert('手机号码格式不正确');
         return false;
     }
+
+
+    // var str = '';
+    // str = "风格："+$('#style').val()+'；户型：'+$('#shi').val()+'、'+$('#ting').val()+'、'+$('#wei').val()
+    // $('#remark').val(str)
+
     //备注处理（几室几厅几卫）
     let $targetSel = $form.find('select[class*="remark"]');
     if ($targetSel.length > 0) {

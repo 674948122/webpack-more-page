@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>免费算一算-装修要花多少钱</title>
+    <!-- <meta name="keywords" content="一站式装修  装修报价"> -->
+    <meta name="description" content="免费算一算，我家装修要花多少钱，10秒快速报价。业之峰精准全屋报价，透明环保装修，透明施工，零污染，零延迟，零增项。业之峰，更环保的高端装饰。" />
+    <meta key>
+    <style>*{margin: 0;padding: 0;}</style>
+    <script>
+        function goPAGE() {
+            if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+
+            }
+            else {
+                var f = window.location.pathname;
+                var arr = f.split(".");
+                var parames = location.search;
+                window.location.href = window.location.origin + arr[0] + '_pc.html' + parames
+            }
+        }
+
+        if (window.self === window.top) {
+            goPAGE(); 
+        }else{
+            
+        }
+    </script>
+</head>
+<body>
+    <div class="back">
+       
+        <!-- 表单1 -->
+        <form class="form_post form_one">
+            <input name="channel" value="峰格汇_装修报价_ZFS5" type="hidden" />
+            <!-- <input id="remark" class="remark" name="remark" value="" type="hidden" /> -->
+            <div class="req">
+                <input name="squareMeters" type="text" class="" placeholder="您的房屋面积">
+                <span>m²</span>
+            </div>
+            <div class="req">
+                <select id="shi">
+                    <option value="1室">1室</option>
+                    <option value="2室">2室</option>
+                    <option value="3室">3室</option>
+                    <option value="4室">4室</option>
+                    <option value="5室">5室</option>
+                    <option value="6室">6室</option>
+                </select>
+                <select id="ting">
+                    <option value="1厅">1厅</option>
+                    <option value="2厅">2厅</option>
+                    <option value="3厅">3厅</option>
+                    <option value="4厅">4厅</option>
+                    <option value="5厅">5厅</option>
+                    <option value="6厅">6厅</option>
+                </select>
+                <select class="last" id="wei">
+                    <option value="1卫">1卫</option>
+                    <option value="2卫">2卫</option>
+                    <option value="3卫">3卫</option>
+                    <option value="4卫">4卫</option>
+                    <option value="5卫">5卫</option>
+                    <option value="6卫">6卫</option>
+                </select>
+            </div>
+            <div class="req">
+                <select class="last" name="风格" id="style">
+                    <option value="现代简约">现代简约</option>
+                    <option value="新古典">新古典</option>
+                    <option value="新中式">新中式</option>
+                    <option value="欧式">欧式</option>
+                    <option value="美式">美式</option>
+                    <option value="法式">法式</option>
+                    <option value="地中海">地中海</option>
+                    <option value="乡村">乡村</option>
+                    <option value="港式">港式</option>
+                </select>
+            </div>
+
+
+            <div class="req">
+                <input name="name" type="text" placeholder="您的称呼" />
+            </div>
+            <div class="req">
+                <input name="phoneNumber" type="text" placeholder="您的联系方式" />
+            </div>
+            
+            
+            <div class="submit" id="submit"></div>
+        </form>
+        <!-- 结束 -->
+        <div class="tab">
+            <p class="tab_item active">免费预约量房</p>
+            <p class="tab_item">免费平面设计方案</p>
+        </div>
+        <!-- 表单2 -->
+        <form class="form_post form_two">
+            <input name="channel" value="峰格汇_装修报价_ZFS5" type="hidden" />
+            <div class="req">
+                <input name="name" type="text" placeholder="您的称呼" />
+                <span style="color: red">*</span>
+            </div>
+            <div class="req">
+                <input name="phoneNumber" type="text" placeholder="您的联系方式" />
+                <span style="color: red">*</span>
+            </div>
+            <div class="req">
+                <input name="squareMeters" type="text" class="" placeholder="您的房屋面积">
+                <span>m²</span>
+            </div>
+            <div class="submit"></div>
+        </form>
+        <!-- 结束 -->
+
+    </div>
+    <!-- <img class="bottom_logo" src="./img/whole_renovation.jpg" alt=""> -->
+     <!-- map -->
+     <script src="https://api.map.baidu.com/api?v=2.0&ak=OpqLAedMGONFbBGVarRqSGCS"></script>
+</body>
+</html>

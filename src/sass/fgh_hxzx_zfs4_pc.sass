@@ -1,0 +1,195 @@
+.Common_HeadTopics
+    width: 100%
+    height: 54px
+    top: 0px
+    position: fixed
+    background-color: #000000
+    z-index: 10
+    .eff 
+        width: 1200px
+        margin: 0 auto
+        height: 100%
+        .companyLogo 
+            width: 369px
+            height: 44px
+            margin-top: 5px
+            background: url('../img/pc_logo.jpg') no-repeat
+            float: left
+        .nav
+            width: 590px
+            float: left
+            height: 100%
+            margin-left: 30px
+            a
+                float: left
+                display: block
+                height: 100%
+                color: white
+                line-height: 54px
+                padding: 0 20px
+                font-size: 14px
+                text-decoration: none
+                font-family: 'Microsoft YaHei'
+                &:hover
+                    color: #b19667
+        .phone 
+            float: left
+            width: 164px
+            height: 100%
+            line-height: 54px
+            span
+                margin-left: 10px
+                color: white
+                font-size: 18px
+
+
+.back
+    margin-top: 54px
+    min-width: 1200px
+    width: 100%
+    height: 7528px
+    background: url('../img/fgh_hxzx_zfs4_pc_back.jpg') no-repeat
+    background-size: cover
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    overflow: hidden
+    .inner
+        width: 1200px
+        height: 100%
+        background: url('../img/fgh_hxzx_zfs4_pc_inner.png') no-repeat
+        position: relative
+        background-size: 100% 100%
+        .link_button
+            position: absolute
+            cursor: pointer
+            z-index: 4
+            &.one
+                width: 258px
+                height: 58px
+                top: 510px
+                left: 231px
+            &.two
+                width: 168px
+                height: 47px
+                top: 2618px
+                left: 109px
+            &.three
+                width: 450px
+                height: 66px
+                top: 6472px
+                left: 375px
+
+        .head
+            position: absolute
+            top: 0
+            left: -360px
+        .form_back
+            position: absolute
+            top: 916px
+            right: -65px
+            z-index: 2
+        .form_img
+            position: absolute
+            top: 968px
+            left: -270px
+            z-index: 3
+        .swipper
+            position: absolute
+            &.swiper_one
+                width: 800px
+                height: 470px
+                top: 6813px
+                left: calc( 50% - 400px )
+                .swiper-container
+                    width: 100%
+                    height: 100%
+                    overflow: hidden
+                    .one
+                        background: url('../img/fgh_bssj_zfs3_1.jpg') no-repeat
+                        background-size: 100% 100%
+                    .two
+                        background: url('../img/fgh_bssj_zfs3_2.jpg') no-repeat
+                        background-size: 100% 100%
+                    .three
+                        background: url('../img/fgh_bssj_zfs3_3.jpg') no-repeat
+                        background-size: 100% 100%
+                    .four
+                        background: url('../img/fgh_bssj_zfs3_4.jpg') no-repeat
+                        background-size: 100% 100%
+                    .five
+                        background: url('../img/fgh_bssj_zfs3_5.jpg') no-repeat
+                        background-size: 100% 100%
+                .swiper-pagination
+                    width: 100%
+                    left: 0
+                    bottom: -45px
+                    display: flex
+                    flex-direction: row
+                    justify-content: center
+                    align-items: center
+                    span
+                        background: transparent
+                        box-sizing: border-box
+                        border: 1px solid #d6d4d4
+                        margin-right: 7px
+                        outline: none
+                        width: 12px
+                        height: 12px
+                        border-radius: 12px
+                        transition: all .3s
+                        &.swiper-pagination-bullet-active
+                            background: #d6d4d4
+                            width: 15px
+                            height: 15px
+                            border-radius: 15px
+                            border: 0
+                .swiper-button-prev
+                    background-image: url('../img/fgh_bssj_zfs3_left.png')
+                    width: 24px
+                    height: 45px
+                    background-repeat: no-repeat
+                    background-size: 100% 100%
+                    left: -44px
+                .swiper-button-next
+                    background-image: url('../img/fgh_bssj_zfs3_right.png')
+                    width: 24px
+                    height: 45px
+                    background-repeat: no-repeat
+                    background-size: 100% 100%
+                    right: -44px
+
+        .form_post 
+            z-index: 3
+            position: absolute
+            width: 470px
+            display: flex
+            flex-direction: column
+            &.form_one 
+                top: 1146px
+                left: 645px
+            input
+                height: 65px
+                width: 100%
+                border: 0
+                outline: none
+                background: transparent
+                font-size: 17px
+                box-sizing: border-box
+                text-indent: 20px
+                color: #7e7b7b
+                font-size: 18px
+                margin-bottom: 7px
+                &::-webkit-input-placeholder 
+                    color: #7e7b7b
+            .req
+                position: relative
+                height: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+            .submit
+                width: 100%
+                height: 65px
+                cursor: pointer

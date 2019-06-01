@@ -1,0 +1,176 @@
+@font-face 
+    font-family: DS-DIGIT
+    src: url('../css/fonts/DS-DIGIT.ttf')
+
+iframe
+    display: none
+.back
+    position: relative
+    width: calc( 750vw / 7.5 )
+    height: calc( 5745vw / 7.5 )
+    background: url('../img/fgh_cpbj_za1_back.jpg') no-repeat
+    background-size: 100% 100%
+    overflow-x: hidden
+    &.hwb
+        background: url('../img/fgh_cpbj_za1_hwb_back.jpg') no-repeat
+        background-size: 100% 100%
+    .form_post 
+        position: absolute
+        width: calc( 650vw / 7.5 )
+        // height: calc( 248vw / 7.5 )
+        &.form_one 
+            top: calc( 984vw / 7.5 )
+            left: calc( 50% - 650vw / 7.5 / 2 )
+        &.form_two
+            top: calc( 5276vw / 7.5 )
+            left: calc( 50% - 650vw / 7.5 / 2 )
+            input
+                color: #ffffff
+                &::-webkit-input-placeholder
+                    color: #ffffff
+            .req
+                span
+                    color: #ffffff
+        input
+            width: 100%
+            height: calc( 76vw / 7.5 )
+            margin-bottom: calc( 10vw / 7.5 )
+            text-indent: calc( 20vw / 7.5 )
+            color: #999999
+            border: 0
+            background: transparent
+            outline: none
+            &::-webkit-input-placeholder
+                color: #999999
+        .req
+            position: relative
+            display: flex
+            justify-content: space-between
+            span
+                font-size: calc( 12vw / 7.5 )
+                color: #999999
+                position: absolute
+                line-height: calc( 76vw / 7.5 )
+                top: 0
+                right: calc( 15vw / 7.5)
+                display: inline-block
+                // opacity: .5
+        .submit
+            width: 100%
+            height: calc( 75vw / 7.5 )
+    .swiper-background
+        width: calc( 530vw / 7.5 )
+        height: calc( 120vw / 7.5 )
+        position: absolute
+        &.swiper_one
+            top: calc( 1331vw / 7.5 )
+            left: calc( 50% - 530vw / 7.5 / 2 )
+        &.swiper_two
+            top: calc( 5624vw / 7.5 )
+            left: calc( 50% - 530vw / 7.5 / 2 )
+            ul
+                li
+                    color: #14282a!important
+        ul
+            width: 100%
+            height: 100%
+            li
+                height: calc( 120vw / 7.5 / 4 )
+                width: 100%
+                font-size: calc( 18vw / 7.5 ) !important
+                color: #b6b6b6 !important
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                &:nth-child(1)
+                    opacity: 1
+                &:nth-child(2)
+                    opacity: 0.75
+                &:nth-child(3)
+                    opacity: 0.5
+                &:nth-child(4)
+                    opacity: 0.25
+                &:nth-child(5)
+                    opacity: 0.1
+                div
+                    display: inline-block
+                    height: 100%
+                    &:last-child 
+                        min-width: calc( 115vw / 7.5 )
+                        text-align: right
+    .swipper
+        position: absolute
+        &.swiper_one
+            width: calc( 750vw  / 7.5 )
+            height: calc( 450vw / 7.5 )
+            top: calc( 1720vw / 7.5 )
+            left: calc( 50% - 750vw / 7.5 / 2 )
+            .swiper-container
+                width: 100%
+                height: 100%
+                overflow: hidden
+                .one
+                    background: url('../img/fgh_cpbj_za1_1.jpg') no-repeat
+                    background-size: 100% 100%
+                .two
+                    background: url('../img/fgh_cpbj_za1_2.jpg') no-repeat
+                    background-size: 100% 100%
+                .three
+                    background: url('../img/fgh_cpbj_za1_3.jpg') no-repeat
+                    background-size: 100% 100%
+                .four
+                    background: url('../img/fgh_cpbj_za1_4.jpg') no-repeat
+                    background-size: 100% 100%
+                .five
+                    background: url('../img/fgh_cpbj_za1_5.jpg') no-repeat
+                    background-size: 100% 100%
+                .six
+                    background: url('../img/fgh_cpbj_za1_6.jpg') no-repeat
+                    background-size: 100% 100%
+            .swiper-pagination
+                width: 100%
+                left: 0
+                bottom: calc( -34vw / 7.5 )
+                display: flex
+                flex-direction: row
+                justify-content: center
+                align-items: center
+                span
+                    background: #999999
+                    margin-right: calc( 6vw / 7.5 )
+                    outline: none
+                    width: calc( 14vw / 7.5 )
+                    height: calc( 14vw / 7.5 )
+                    border-radius: calc( 14vw / 7.5 )
+                    box-sizing: border-box
+                    border: 0
+                    &.swiper-pagination-bullet-active
+                        width: calc( 14vw / 7.5 )
+                        height: calc( 14vw / 7.5 )
+                        border-radius: calc( 14vw / 7.5 )
+                        margin-right: calc( 6vw / 7.5 )
+                        background: #44919a
+            // .swiper-button-prev
+            //     background-image: url('../img/fgh_bssj_zfs3_left.png')
+            //     width: calc( 24vw / 7.5 )
+            //     height: calc( 45vw / 7.5 )
+            //     background-repeat: no-repeat
+            //     background-size: 100% 100%
+            //     left: calc( -44vw / 7.5 )
+            // .swiper-button-next
+            //     background-image: url('../img/fgh_bssj_zfs3_right.png')
+            //     width: calc( 24vw / 7.5 )
+            //     height: calc( 45vw / 7.5 )
+            //     background-repeat: no-repeat
+            //     background-size: 100% 100%
+            //     right: calc( -44vw / 7.5 )
+.footer
+    background: #387178
+    margin-top: -1px
+    .m-footer
+        padding-top: calc( 40vw / 7.5 )
+        padding-bottom: calc( 100vw / 7.5 )
+        text-align: center
+        font-size: calc( 23vw / 7.5 )
+        line-height: calc( 50vw / 7.5 )
+        color: #fff

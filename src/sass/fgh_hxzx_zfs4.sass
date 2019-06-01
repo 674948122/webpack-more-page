@@ -1,0 +1,121 @@
+body
+    overflow: scroll!important
+.back
+    position: relative
+    width: calc( 750vw / 7.5 )
+    height: calc( 7452vw / 7.5 )
+    background: url('../img/fgh_hxzx_zfs4_back.jpg') no-repeat
+    background-size: 100% 100%
+    overflow-x: hidden
+    .junp
+        position: absolute
+        top: calc( 441vw / 7.5 )
+        right: calc( 220vw / 7.5 )
+        width: calc( 310vw / 7.5 )
+        height: calc( 70vw / 7.5 )
+    // #serviec
+    //     position: absolute
+    //     top: calc( 4762vw / 7.5 )
+    //     right: calc( 112vw / 7.5 )
+    //     width: calc( 526vw / 7.5 )
+    //     height: calc( 59vw / 7.5 )
+    .swipper
+        position: absolute
+        &.swiper_one
+            width: calc( 750vw  / 7.5 * 2.4 )
+            height: calc( 370vw / 7.5 )
+            top: calc( 6886vw / 7.5 )
+            left: calc( 50% - 750vw * 2.4 / 7.5 / 2 )
+            .swiper-container
+                width: 100%
+                height: 100%
+                overflow: hidden
+                .one
+                    background: url('../img/fgh_hxzx_zfs4_1.jpg') no-repeat
+                    background-size: 100% 100%
+                .two
+                    background: url('../img/fgh_hxzx_zfs4_2.jpg') no-repeat
+                    background-size: 100% 100%
+                .three
+                    background: url('../img/fgh_hxzx_zfs4_3.jpg') no-repeat
+                    background-size: 100% 100%
+                .four
+                    background: url('../img/fgh_hxzx_zfs4_4.jpg') no-repeat
+                    background-size: 100% 100%
+                .five
+                    background: url('../img/fgh_hxzx_zfs4_5.jpg') no-repeat
+                    background-size: 100% 100%
+            .swiper-pagination
+                width: 100%
+                left: 0
+                bottom: calc( -30vw / 7.5 )
+                display: flex
+                flex-direction: row
+                justify-content: center
+                align-items: center
+                span
+                    background: #615d5c
+                    margin-right: calc( 4vw / 7.5 )
+                    outline: none
+                    width: calc( 12vw / 7.5 )
+                    height: calc( 12vw / 7.5 )
+                    border-radius: calc( 12vw / 7.5 )
+                    box-sizing: border-box
+                    border: 1px solid #ffffff
+                    &.swiper-pagination-bullet-active
+                        width: calc( 15vw / 7.5 )
+                        height: calc( 15vw / 7.5 )
+                        border-radius: calc( 15vw / 7.5 )
+                        margin-right: calc( 7vw / 7.5 )
+                        background: #dbd8d8
+            // .swiper-button-prev
+            //     background-image: url('../img/fgh_bssj_zfs3_left.png')
+            //     width: calc( 24vw / 7.5 )
+            //     height: calc( 45vw / 7.5 )
+            //     background-repeat: no-repeat
+            //     background-size: 100% 100%
+            //     left: calc( -44vw / 7.5 )
+            // .swiper-button-next
+            //     background-image: url('../img/fgh_bssj_zfs3_right.png')
+            //     width: calc( 24vw / 7.5 )
+            //     height: calc( 45vw / 7.5 )
+            //     background-repeat: no-repeat
+            //     background-size: 100% 100%
+            //     right: calc( -44vw / 7.5 )
+    .form_post 
+        position: absolute
+        width: calc( 660vw / 7.5 )
+        &.form_one 
+            top: calc( 1203vw / 7.5 )
+            left: calc( 50% - 660vw / 7.5 / 2 )
+        &.form_two
+            top: calc( 6284vw / 7.5 )
+            left: calc( 50% - 660vw / 7.5 / 2 )
+        input
+            width: 100%
+            height: calc( 90vw / 7.5 )
+            margin-bottom: calc( 10vw / 7.5 )
+            text-indent: calc( 20vw / 7.5 )
+            color: #7e7b7b
+            border: 0
+            background: transparent
+            outline: none
+            &::-webkit-input-placeholder
+                color: #7e7b7b
+        .req
+            position: relative
+            display: flex
+            justify-content: space-between
+            span
+                font-size: calc( 12vw / 7.5 )
+                color: #ffffff
+                position: absolute
+                line-height: calc( 76vw / 7.5 )
+                top: 0
+                right: calc( 15vw / 7.5)
+                display: inline-block
+                opacity: .5
+        .submit
+            margin-top: calc( 10vw / 7.5 )
+            width: 100%
+            height: calc( 90vw / 7.5 )
