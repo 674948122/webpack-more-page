@@ -73,7 +73,9 @@ module.exports = {
         hc_dssj_wkb6: './src/hc_dssj_wkb6.js',
         hc_dssj_wkb6_pc: './src/hc_dssj_wkb6_pc.js',
         hcpp_js1: './src/hcpp_js1.js',
-        hcpp_js1_pc: './src/hcpp_js1_pc.js'
+        hcpp_js1_pc: './src/hcpp_js1_pc.js',
+        fgh_zxfgbj_zfs6: './src/fgh_zxfgbj_zfs6.js',
+        fgh_zxfgbj_zfs6_pc: './src/fgh_zxfgbj_zfs6_pc.js'
     },
     // 出口文件配置项
     output: {
@@ -851,6 +853,34 @@ module.exports = {
             filename: "hcpp_js1_pc.html",
             title: "汇巢别墅装饰，22年沉淀，打造精益求精的生活",
             chunks:['hcpp_js1_pc'], //添加引入的js,也就是entry中的key
+            favicon: './favicon.ico',//添加特定的 favicon 路径到输出的 HTML 文件中。
+            inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
+            showErrors:true,//是否将错误信息输出到html页面中
+        }),
+        new htmlPlugin({
+            minify: { //是对html文件进行压缩
+                removeAttributeQuotes: true,  //removeAttrubuteQuotes是却掉属性的双引号。
+                collapseWhitespace: true //折叠空白区域 也就是压缩代码
+            },
+            hash: true, //为了开发中js有缓存效果，所以加入hash，这样可以有效避免缓存JS。
+            template:'./src/fgh_zxfgbj_zfs6.html', //是要打包的html模版路径和文件名称。
+            filename: "fgh_zxfgbj_zfs6.html",
+            title: "免费算一算-装修成喜欢的风格要花多少钱",
+            chunks:['fgh_zxfgbj_zfs6'], //添加引入的js,也就是entry中的key
+            favicon: './favicon.ico',//添加特定的 favicon 路径到输出的 HTML 文件中。
+            inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
+            showErrors:true,//是否将错误信息输出到html页面中
+        }),
+        new htmlPlugin({
+            minify: { //是对html文件进行压缩
+                removeAttributeQuotes: true,  //removeAttrubuteQuotes是却掉属性的双引号。
+                collapseWhitespace: true //折叠空白区域 也就是压缩代码
+            },
+            hash: true, //为了开发中js有缓存效果，所以加入hash，这样可以有效避免缓存JS。
+            template:'./src/fgh_zxfgbj_zfs6_pc.html', //是要打包的html模版路径和文件名称。
+            filename: "fgh_zxfgbj_zfs6_pc.html",
+            title: "免费算一算-装修成喜欢的风格要花多少钱",
+            chunks:['fgh_zxfgbj_zfs6_pc'], //添加引入的js,也就是entry中的key
             favicon: './favicon.ico',//添加特定的 favicon 路径到输出的 HTML 文件中。
             inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
             showErrors:true,//是否将错误信息输出到html页面中

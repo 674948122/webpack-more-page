@@ -1,0 +1,884 @@
+.Common_HeadTopics
+    width: 100%
+    height: 54px
+    top: 0px
+    position: fixed
+    background-color: #000000
+    z-index: 200
+    .eff 
+        width: 1200px
+        margin: 0 auto
+        height: 100%
+        .companyLogo 
+            width: 369px
+            height: 44px
+            margin-top: 5px
+            background: url('../img/pc_logo.jpg') no-repeat
+            float: left
+        .nav
+            width: 590px
+            float: left
+            height: 100%
+            margin-left: 30px
+            a
+                float: left
+                display: block
+                height: 100%
+                color: white
+                line-height: 54px
+                padding: 0 20px
+                font-size: 14px
+                text-decoration: none
+                font-family: 'Microsoft YaHei'
+                &:hover
+                    color: #b19667
+        .phone 
+            float: left
+            width: 164px
+            height: 100%
+            line-height: 54px
+            span
+                margin-left: 10px
+                color: white
+                font-size: 18px
+.nav_floor
+    // display: none
+    position: fixed
+    z-index: 100
+    left: 20px
+    top: 58px
+    width: 110px
+    height: 240px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    // border: 1px solid red
+    opacity: 0
+    transition: all .3s
+    .left
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        height: 100%
+        margin-right: 10px
+        .circle_warp
+            flex: 1
+            margin-bottom: 15px
+            display: flex
+            align-items: center
+            justify-content: center
+            transition: all .3s
+            &.active
+                .circle
+                    width: 17px
+                    height: 17px
+                    box-sizing: border-box
+                    border: 0
+                    border-radius: 50%
+                    background: #efc65b
+            .circle
+                width: 11px
+                height: 11px
+                box-sizing: border-box
+                border: 1px solid #ffffff
+                border-radius: 50%
+                cursor: pointer
+                transition: all .3s
+    .right
+        height: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        
+        .nav_floor_text
+            flex: 1
+            margin-bottom: 15px
+            font-size: 15px
+            color: #ffffff
+            display: flex
+            align-items: center
+            justify-content: center
+            cursor: pointer
+            transition: all .3s
+            &.active
+                color: #efc65b
+                font-size: 19px
+
+
+
+
+.back
+    margin-top: 54px
+    min-width: 1200px
+    width: 100%
+    height: 9194px
+    background: url('../img/fgh_zxfgbj_zfs6_pc_back.jpg') no-repeat
+    background-size: cover
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    overflow: hidden
+    .inner
+        width: 1200px
+        height: 100%
+        background: url('../img/fgh_zxfgbj_zfs6_pc_inner.png') no-repeat
+        position: relative
+        background-size: 100% 100%
+        .head
+            position: absolute
+            top: 0
+            left: -360px
+
+        .content
+            position: absolute
+            top: 1201px
+            left: -46px
+        .eight_big_img
+            position: absolute
+            top: 1793px
+            left: -360px
+
+        .swipper
+            position: absolute
+            img
+                position: absolute
+                top: -36px
+                left: calc( 50% - 242px / 2 )
+                z-index: 100
+                width: 242px
+                height: 72px
+            .link_button
+                position: absolute
+                bottom: -79px
+                left: calc( 50% - -775px / 2 )
+                z-index: 100
+                width: 148px
+                height: 46px
+            .swiper-container
+                // 上一张
+                .swiper-slide-prev
+                    position: relative
+                    &:after
+                        content: ''
+                        display: inline-block
+                        width: 100%
+                        height: 100%
+                        position: absolute
+                        top: 0
+                        left: 0
+                        background: rgba(0,0,0,.6)
+                // 下一张
+                .swiper-slide-next
+                    z-index: -1
+                    position: relative
+                    &:after
+                        content: ''
+                        display: inline-block
+                        width: 100%
+                        height: 100%
+                        position: absolute
+                        top: 0
+                        left: 0
+                        background: rgba(0,0,0,.6)
+                    // 导航按钮
+            .swiper-button-prev
+                background-image: url('../img/fgh_zxfgbj_zfs6_left_botton.png')
+                width: 49px
+                height: 49px
+                background-repeat: no-repeat
+                background-size: 100% 100%
+                left: 1185px
+                top: 560px
+            .swiper-button-next
+                background-image: url('../img/fgh_zxfgbj_zfs6_right_button.png')
+                width: 49px
+                height: 49px
+                background-repeat: no-repeat
+                background-size: 100% 100%
+                left: 1235px
+                top: 560px
+            .swiper-pagination
+                width: 100%
+                left: 0
+                bottom: 40px
+                display: flex
+                flex-direction: row
+                justify-content: center
+                align-items: center
+                span
+                    background: #000000
+                    opacity: .6
+                    margin-right: 5px
+                    outline: none
+                    width: 36px
+                    height: 6px
+                    border-radius: 6px
+                    &.swiper-pagination-bullet-active
+                        background: #efc65b
+                        opacity: 1
+            &.swiper_one
+                width: calc( 1145px * 3 )
+                height: 619px
+                top: 2233px
+                left: calc( 50% - 1145px * 3 / 2 )
+                .swiper-container
+                    width: 100%
+                    height: 100%
+                    overflow: hidden
+                    .one
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_xdjy_1.jpg') no-repeat
+                        background-size: 100% 100%
+                    .two
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_xdjy_2.jpg') no-repeat
+                        background-size: 100% 100%
+                    .three
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_xdjy_3.jpg') no-repeat
+                        background-size: 100% 100%
+                    .four
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_xdjy_4.jpg') no-repeat
+                        background-size: 100% 100%
+                    .five
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_xdjy_5.jpg') no-repeat
+                        background-size: 100% 100%
+
+            &.swiper_two
+                width: calc( 1145px * 3 )
+                height: 619px
+                top: 3075px
+                left: calc( 50% - 1145px * 3 / 2 )
+                .swiper-container
+                    width: 100%
+                    height: 100%
+                    overflow: hidden
+                    .one
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_xzs_1.jpg') no-repeat
+                        background-size: 100% 100%
+                    .two
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_xzs_2.jpg') no-repeat
+                        background-size: 100% 100%
+                    .three
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_xzs_3.jpg') no-repeat
+                        background-size: 100% 100%
+                    .four
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_xzs_4.jpg') no-repeat
+                        background-size: 100% 100%
+                    .five
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_xzs_5.jpg') no-repeat
+                        background-size: 100% 100%
+            &.swiper_three
+                width: calc( 1145px * 3 )
+                height: 619px
+                top: 3917px
+                left: calc( 50% - 1145px * 3 / 2 )
+                .swiper-container
+                    width: 100%
+                    height: 100%
+                    overflow: hidden
+                    .one
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_xgd_1.jpg') no-repeat
+                        background-size: 100% 100%
+                    .two
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_xgd_2.jpg') no-repeat
+                        background-size: 100% 100%
+                    .three
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_xgd_3.jpg') no-repeat
+                        background-size: 100% 100%
+                    .four
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_xgd_4.jpg') no-repeat
+                        background-size: 100% 100%
+                    .five
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_xgd_5.jpg') no-repeat
+                        background-size: 100% 100%
+            &.swiper_four
+                width: calc( 1145px * 3 )
+                height: 619px
+                top: 4773px
+                left: calc( 50% - 1145px * 3 / 2 )
+                .swiper-container
+                    width: 100%
+                    height: 100%
+                    overflow: hidden
+                    .one
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_os_1.jpg') no-repeat
+                        background-size: 100% 100%
+                    .two
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_os_2.jpg') no-repeat
+                        background-size: 100% 100%
+                    .three
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_os_3.jpg') no-repeat
+                        background-size: 100% 100%
+                    .four
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_os_4.jpg') no-repeat
+                        background-size: 100% 100%
+                    .five
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_os_5.jpg') no-repeat
+                        background-size: 100% 100%
+            &.swiper_five
+                width: calc( 1145px * 3 )
+                height: 619px
+                top: 5615px
+                left: calc( 50% - 1145px * 3 / 2 )
+                .swiper-container
+                    width: 100%
+                    height: 100%
+                    overflow: hidden
+                    .one
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_ms_1.jpg') no-repeat
+                        background-size: 100% 100%
+                    .two
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_ms_2.jpg') no-repeat
+                        background-size: 100% 100%
+                    .three
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_ms_3.jpg') no-repeat
+                        background-size: 100% 100%
+                    .four
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_ms_4.jpg') no-repeat
+                        background-size: 100% 100%
+                    .five
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_ms_5.jpg') no-repeat
+                        background-size: 100% 100%
+            &.swiper_six
+                width: calc( 1145px * 3 )
+                height: 619px
+                top: 6458px
+                left: calc( 50% - 1145px * 3 / 2 )
+                .swiper-container
+                    width: 100%
+                    height: 100%
+                    overflow: hidden
+                    .one
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_ty_1.jpg') no-repeat
+                        background-size: 100% 100%
+                    .two
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_ty_2.jpg') no-repeat
+                        background-size: 100% 100%
+                    .three
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_ty_3.jpg') no-repeat
+                        background-size: 100% 100%
+                    .four
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_ty_4.jpg') no-repeat
+                        background-size: 100% 100%
+                    .five
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_ty_5.jpg') no-repeat
+                        background-size: 100% 100%
+
+            &.swiper_seven
+                width: calc( 1145px * 3 )
+                height: 619px
+                top: 7314px
+                left: calc( 50% - 1145px * 3 / 2 )
+                .swiper-container
+                    width: 100%
+                    height: 100%
+                    overflow: hidden
+                    .one
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_dzh_1.jpg') no-repeat
+                        background-size: 100% 100%
+                    .two
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_dzh_2.jpg') no-repeat
+                        background-size: 100% 100%
+                    .three
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_dzh_3.jpg') no-repeat
+                        background-size: 100% 100%
+                    .four
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_dzh_4.jpg') no-repeat
+                        background-size: 100% 100%
+                    .five
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_dzh_5.jpg') no-repeat
+                        background-size: 100% 100%
+            &.swiper_eight
+                width: calc( 1145px * 3 )
+                height: 619px
+                top: 8176px
+                left: calc( 50% - 1145px * 3 / 2 )
+                .swiper-container
+                    width: 100%
+                    height: 100%
+                    overflow: hidden
+                    .one
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_hd_1.jpg') no-repeat
+                        background-size: 100% 100%
+                    .two
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_hd_2.jpg') no-repeat
+                        background-size: 100% 100%
+                    .three
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_hd_3.jpg') no-repeat
+                        background-size: 100% 100%
+                    .four
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_hd_4.jpg') no-repeat
+                        background-size: 100% 100%
+                    .five
+                        background: url('../img/fgh_zxfgbj_zfs6_pc_hd_5.jpg') no-repeat
+                        background-size: 100% 100% 
+        .form_post 
+            position: absolute
+            width: 1200px
+            height: 252px
+            display: flex
+            flex-direction: row
+            background: url('../img/fgh_zxfgbj_zfs6_pc_form.png') no-repeat
+            background-size: 100% 100%
+            &.form_one 
+                top: 603px
+                left: 0
+            input
+                height: 59px
+                width: 100%
+                border: 0
+                outline: none
+                background: transparent
+                font-size: 17px
+                box-sizing: border-box
+                text-indent: 20px
+                color: #7e7b7b
+                font-size: 18px
+                margin-top: -32px
+                &::-webkit-input-placeholder 
+                    color: #7e7b7b
+            .req
+                width: 267px
+                position: relative
+                height: 100%
+                margin-right: 10px
+                display: flex
+                justify-content: center
+                align-items: center
+                &.first
+                    margin-left: 48px
+                &.last
+                    margin-right: 48px
+                span
+                    color: #b8909f
+                    position: absolute
+                    top: 23px
+                    right: 12px
+                    font-size: 18px
+                select
+                    flex: 1
+                    height: 59px
+                    margin-top: -32px
+                    margin-bottom: 0
+                    text-indent: 15px
+                    color: #7e7b7b
+                    outline: none
+                    border: 0
+                    border-radius: 3px
+                    background: #ffffff
+                    text-align: center
+                    font-size: 17px
+                    option
+                        color: #7e7b7b !important
+                        outline: none !important
+                        border: 0 !important
+                        text-indent: 15px!important
+                        border-radius: 3px !important
+                        background: #ffffff !important
+                        text-align: center
+                        font-size: 17px
+            .submit
+                position: absolute
+                top: 163px
+                left: 448px
+                width: 298px
+                height: 52px
+                cursor: pointer
+        .custom_service
+            position: fixed
+            right: 0
+            top: 40%
+            width: 92px
+            z-index: 10
+            overflow: hidden
+            border: 1px solid rgb(221, 221, 221)
+            display: flex
+            flex-direction: column
+            .item
+                display: inline-block
+                width: 100%
+                height: 92px
+                background: #ffffff
+                border-bottom: 1px solid rgb(221, 221, 221)
+                text-align: center
+                outline: none
+                text-decoration: none
+                color: rgb(51, 51, 51)
+                .img
+                    margin: 0 auto
+                .online_server
+                    width: 58px
+                    height: 51px
+                    background: url('../img/pc_slider1.gif') no-repeat
+                    background-size: 100% 100%
+                .get_price
+                    margin-top: 20px
+                    width: 28px
+                    height: 34px
+                    background: url('../img/pc_slider2.jpg') no-repeat
+                    background-size: 100% 100%
+                .to_top
+                    margin-top: 20px
+                    width: 53px
+                    height: 19px
+                    background: url('../img/pc_slider3.jpg') no-repeat
+                    background-size: 100% 100%
+                &:last-child
+                    border-bottom: 0
+                &:first-child
+                &:hover
+                    color: #ffffff
+                    background: rgb(182,148,84)
+                    .online_server
+                        background: url('../img/pc_slider1.png') no-repeat
+                    .get_price
+                        background: url('../img/pc_slider2.png') no-repeat
+                    .to_top
+                        background: url('../img/pc_slider3.png') no-repeat
+
+
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 
+    float: left
+
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 
+    position: relative
+    min-height: 1px
+    padding-right: 15px
+    padding-left: 15px
+
+.row 
+    margin-right: -15px
+    margin-left: -15px
+
+.col-xs-4 
+    width: 30.33333333%
+
+.col-xs-6
+    width: 47%
+
+.form-control 
+    display: block
+    width: 100%
+    height: 34px
+    padding: 6px 12px
+    font-size: 14px
+    line-height: 1.42857143
+    color: #555
+    background-color: #fff
+    background-image: none
+    border: 1px solid #ccc
+    border-radius: 4px
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075)
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075)
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+
+.btn 
+    display: inline-block
+    padding: 6px 12px
+    margin-bottom: 0
+    font-size: 14px
+    font-weight: normal
+    line-height: 1.42857143
+    text-align: center
+    white-space: nowrap
+    vertical-align: middle
+    -ms-touch-action: manipulation
+    touch-action: manipulation
+    cursor: pointer
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    background-image: none
+    border: 1px solid transparent
+    border-radius: 4px
+
+.submit-label-btn 
+    position: absolute
+    left: 50%
+    bottom: 129px
+    margin-left: -42px
+    display: block
+    width: 92px
+    height: 92px
+    font-size: 16px
+    color: #ffffff !important
+    padding: 0 22px
+    white-space: pre-wrap
+    background: #b69454
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    border-radius: 50%
+    z-index: 15
+    outline: none !important
+
+.fixed-panel-body
+    width: 402px
+    height: 196px
+
+.calculator-form 
+    overflow: hidden
+    padding: 10px 22px
+
+    .form-control 
+        border-radius: 2px
+    
+
+    .area 
+        position: relative
+
+        .form-control 
+            padding-right: 30px
+        
+
+        .m2 
+            position: absolute
+            right: 10px
+            top: 10px
+            font-size: 12px
+        
+    
+
+    .form-group 
+        margin-left: -3px
+        margin-right: -3px
+        margin-bottom: 10px
+        overflow: hidden
+
+        .col-xs-6, .col-xs-4, .col-xs-12 
+            padding-left: 3px
+            padding-right: 3px
+        
+
+        .col-xs-9 
+            .row 
+                overflow: hidden
+
+                .col-xs-12 
+
+
+                    input 
+                        height: 24px
+                        width: 88%
+
+                        &.two 
+                            width: 105%
+
+    .btn-box 
+        margin-top: 15px
+
+        .btn 
+            background-color: #b69454
+            font-size: 16px
+            color: #ffffff
+        
+    
+
+.fixed-bar-wrap 
+    position: fixed
+    bottom: -372px
+    /*top:0*/
+    left: 0
+    right: 0
+    min-width: 980px
+    background: url(../img/fixed-bar-bg.png) center 0 no-repeat
+    z-index: 10
+
+    &.open 
+        .control-bar 
+            &:after 
+                background: url(../img/arrow-xia.png) center 0 no-repeat
+            
+        
+    
+
+    .control-bar 
+        position: relative
+        margin-top: 80px
+        height: 64px
+        cursor: pointer
+
+        &:after 
+            content: ''
+            position: absolute
+            left: 50%
+            top: 18px
+            margin-left: 405px
+            width: 28px
+            height: 34px
+            background: url(../img/arrow-shang.png) center 0 no-repeat
+        
+    
+
+
+.fixed-white-box 
+    position: relative
+    margin: 0 auto
+    width: 980px
+    height: 372px
+
+    &.modal-white-box 
+        width: 100%
+        height: 266px
+        background: url(../img/modal-white-box.png) center 20px no-repeat
+
+        .submit-label-btn 
+            bottom: 82px
+            margin-left: -46px
+        
+
+        .circle-animate 
+            bottom: 58px
+            margin-left: -70px
+        
+
+        .fixed-white-l 
+            padding-top: 0
+
+            .control-label 
+                font-size: 14px
+                padding: 10px 5px
+            
+
+            .form-control 
+                height: 38px
+                border-color: #cccccc
+                font-size: 12px
+            
+        
+
+        .fixed-white-r 
+            padding: 10px 55px 0 120px
+
+            .fixed-result 
+                padding: 15px 15px 20px 40px
+                border: 1px solid #ababab
+            
+
+            .fixed-result-three 
+                height: 152px
+                border: 1px solid #ababab
+                padding: 15px 15px 20px 40px
+
+                li 
+                    margin-bottom: 10px
+                
+            
+        
+
+        .group-disc 
+            font-size: 12px
+            padding-top: 10px
+            color: #8c8b8b
+        
+    
+
+    .fixed-white-l 
+        float: left
+        width: 41%
+        padding: 55px 78px 0 10px
+
+        .calculator-form 
+            .col-xs-3 
+                width: 25%
+                text-align: left
+
+                em 
+                    color: #ff0000
+                
+            
+
+            .col-xs-9 
+                width: 58%
+
+                .col-xs-6 
+                    margin-top: 10px
+                
+            
+        
+    
+
+    .fixed-white-r 
+        float: left
+        width: 32%
+        padding: 50px 55px 0 120px
+
+        h3 
+            text-align: center
+            font-size: 18px
+            color: #b69454
+            margin-bottom: 15px
+        
+
+        .fixed-disc 
+            text-align: center
+            font-size: 18px
+            margin-bottom: 15px
+
+            strong 
+                font-size: 30px
+                color: #b69454
+            
+        
+
+        .fixed-result 
+            border: 1px solid #ddd
+            padding: 15px 15px 20px 80px
+
+            li 
+                font-size: 14px
+
+                strong 
+                    display: inline-block
+                    min-width: 85px
+                    padding: 0 5px
+                    font-size: 20px
+                    color: #b69454
+                
+            
+        
+    
+
+
+.fixed-panel-header 
+    margin-bottom: 40px
+    font-size: 20px
+    padding-left: 30px
+
+    small 
+        font-size: 14px
+        color: #b69454
+    
+
+.circle-animate 
+    position: absolute
+    left: 50%
+    bottom: 105px
+    margin-left: -66px
+    width: 140px
+    height: 140px
+    -webkit-border-radius: 50%
+    border-radius: 50%
+    background: #ccb487
+    z-index: 12
+    -webkit-animation: scale-three2 1.5s ease infinite
+    -moz-animation: scale-three2 1.5s ease infinite
+    -o-animation: scale-three2 1.5s ease infinite
+    animation: scale-three2 1.5s ease infinite
+    animation-fill-mode: both
+
+@keyframes scale-three2 
+    0% 
+        transform: scale(.6)
+        opacity: 1
+    
+
+    100% 
+        transform: scale(1.1)
+        opacity: 0
+    

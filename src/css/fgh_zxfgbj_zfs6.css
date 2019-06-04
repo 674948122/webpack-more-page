@@ -1,0 +1,322 @@
+body {
+  overflow: scroll !important; }
+
+.back {
+  position: relative;
+  width: calc( 750vw / 7.5 );
+  height: calc( 6873vw / 7.5 );
+  background: url("../img/fgh_zxfgbj_zfs6_back.jpg") no-repeat;
+  background-size: 100% 100%;
+  overflow-x: hidden; }
+  .back #serviec {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: calc( 750vw / 7.5 );
+    height: calc( 96vw / 7.5 );
+    background: url("../img/fgh_zxfgbj_zfs6_fixed_bottom.png") no-repeat;
+    background-size: 100% 100%;
+    z-index: 200; }
+  .back .swipper {
+    position: absolute; }
+    .back .swipper img {
+      position: absolute;
+      top: calc( -36vw / 7.5 );
+      left: calc( 50% - 242vw / 7.5 / 2 );
+      z-index: 100;
+      width: calc( 242vw / 7.5 );
+      height: calc( 72vw / 7.5 ); }
+    .back .swipper .link_button {
+      position: absolute;
+      bottom: calc( -73vw / 7.5 );
+      left: calc( 50% - -311vw / 7.5 / 2 );
+      z-index: 100;
+      width: calc( 148vw / 7.5 );
+      height: calc( 46vw / 7.5 ); }
+    .back .swipper .swiper-container .swiper-slide-prev {
+      position: relative; }
+      .back .swipper .swiper-container .swiper-slide-prev:after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.6); }
+    .back .swipper .swiper-container .swiper-slide-next {
+      z-index: -1;
+      position: relative; }
+      .back .swipper .swiper-container .swiper-slide-next:after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.6); }
+    .back .swipper .swiper-button-prev {
+      background-image: url("../img/fgh_zxfgbj_zfs6_left_botton.png");
+      width: calc( 49vw / 7.5 );
+      height: calc( 49vw / 7.5 );
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      left: calc( 655vw / 7.5 );
+      top: calc( 328vw / 7.5 ); }
+    .back .swipper .swiper-button-next {
+      background-image: url("../img/fgh_zxfgbj_zfs6_right_button.png");
+      width: calc( 49vw / 7.5 );
+      height: calc( 49vw / 7.5 );
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      left: calc( 705vw / 7.5 );
+      top: calc( 328vw / 7.5 ); }
+    .back .swipper.swiper_one {
+      width: calc( 630vw * 3  / 7.5 );
+      height: calc( 346vw / 7.5 );
+      top: calc( 2483vw / 7.5 );
+      left: calc( 50% - 630vw * 3  / 7.5 / 2 ); }
+      .back .swipper.swiper_one .swiper-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden; }
+        .back .swipper.swiper_one .swiper-container .one {
+          background: url("../img/fgh_zxfgbj_zfs6_xdjy_1.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_one .swiper-container .two {
+          background: url("../img/fgh_zxfgbj_zfs6_xdjy_2.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_one .swiper-container .three {
+          background: url("../img/fgh_zxfgbj_zfs6_xdjy_3.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_one .swiper-container .four {
+          background: url("../img/fgh_zxfgbj_zfs6_xdjy_4.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_one .swiper-container .five {
+          background: url("../img/fgh_zxfgbj_zfs6_xdjy_5.jpg") no-repeat;
+          background-size: 100% 100%; }
+    .back .swipper.swiper_two {
+      width: calc( 630vw * 3  / 7.5 );
+      height: calc( 346vw / 7.5 );
+      top: calc( 3026vw / 7.5 );
+      left: calc( 50% - 630vw * 3  / 7.5 / 2 ); }
+      .back .swipper.swiper_two .swiper-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden; }
+        .back .swipper.swiper_two .swiper-container .one {
+          background: url("../img/fgh_zxfgbj_zfs6_xzs_1.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_two .swiper-container .two {
+          background: url("../img/fgh_zxfgbj_zfs6_xzs_2.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_two .swiper-container .three {
+          background: url("../img/fgh_zxfgbj_zfs6_xzs_3.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_two .swiper-container .four {
+          background: url("../img/fgh_zxfgbj_zfs6_xzs_4.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_two .swiper-container .five {
+          background: url("../img/fgh_zxfgbj_zfs6_xzs_5.jpg") no-repeat;
+          background-size: 100% 100%; }
+    .back .swipper.swiper_three {
+      width: calc( 630vw * 3  / 7.5 );
+      height: calc( 346vw / 7.5 );
+      top: calc( 5196vw / 7.5 );
+      left: calc( 50% - 630vw * 3  / 7.5 / 2 ); }
+      .back .swipper.swiper_three .swiper-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden; }
+        .back .swipper.swiper_three .swiper-container .one {
+          background: url("../img/fgh_zxfgbj_zfs6_xgd_1.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_three .swiper-container .two {
+          background: url("../img/fgh_zxfgbj_zfs6_xgd_2.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_three .swiper-container .three {
+          background: url("../img/fgh_zxfgbj_zfs6_xgd_3.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_three .swiper-container .four {
+          background: url("../img/fgh_zxfgbj_zfs6_xgd_4.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_three .swiper-container .five {
+          background: url("../img/fgh_zxfgbj_zfs6_xgd_5.jpg") no-repeat;
+          background-size: 100% 100%; }
+    .back .swipper.swiper_four {
+      width: calc( 630vw * 3  / 7.5 );
+      height: calc( 346vw / 7.5 );
+      top: calc( 3568vw / 7.5 );
+      left: calc( 50% - 630vw * 3  / 7.5 / 2 ); }
+      .back .swipper.swiper_four .swiper-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden; }
+        .back .swipper.swiper_four .swiper-container .one {
+          background: url("../img/fgh_zxfgbj_zfs6_os_1.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_four .swiper-container .two {
+          background: url("../img/fgh_zxfgbj_zfs6_os_2.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_four .swiper-container .three {
+          background: url("../img/fgh_zxfgbj_zfs6_os_3.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_four .swiper-container .four {
+          background: url("../img/fgh_zxfgbj_zfs6_os_4.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_four .swiper-container .five {
+          background: url("../img/fgh_zxfgbj_zfs6_os_5.jpg") no-repeat;
+          background-size: 100% 100%; }
+    .back .swipper.swiper_five {
+      width: calc( 630vw * 3  / 7.5 );
+      height: calc( 346vw / 7.5 );
+      top: calc( 4111vw / 7.5 );
+      left: calc( 50% - 630vw * 3  / 7.5 / 2 ); }
+      .back .swipper.swiper_five .swiper-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden; }
+        .back .swipper.swiper_five .swiper-container .one {
+          background: url("../img/fgh_zxfgbj_zfs6_ms_1.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_five .swiper-container .two {
+          background: url("../img/fgh_zxfgbj_zfs6_ms_2.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_five .swiper-container .three {
+          background: url("../img/fgh_zxfgbj_zfs6_ms_3.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_five .swiper-container .four {
+          background: url("../img/fgh_zxfgbj_zfs6_ms_4.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_five .swiper-container .five {
+          background: url("../img/fgh_zxfgbj_zfs6_ms_5.jpg") no-repeat;
+          background-size: 100% 100%; }
+    .back .swipper.swiper_six {
+      width: calc( 630vw * 3  / 7.5 );
+      height: calc( 346vw / 7.5 );
+      top: calc( 4653vw / 7.5 );
+      left: calc( 50% - 630vw * 3  / 7.5 / 2 ); }
+      .back .swipper.swiper_six .swiper-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden; }
+        .back .swipper.swiper_six .swiper-container .one {
+          background: url("../img/fgh_zxfgbj_zfs6_ty_1.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_six .swiper-container .two {
+          background: url("../img/fgh_zxfgbj_zfs6_ty_2.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_six .swiper-container .three {
+          background: url("../img/fgh_zxfgbj_zfs6_ty_3.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_six .swiper-container .four {
+          background: url("../img/fgh_zxfgbj_zfs6_ty_4.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_six .swiper-container .five {
+          background: url("../img/fgh_zxfgbj_zfs6_ty_5.jpg") no-repeat;
+          background-size: 100% 100%; }
+    .back .swipper.swiper_seven {
+      width: calc( 630vw * 3  / 7.5 );
+      height: calc( 346vw / 7.5 );
+      top: calc( 5738vw / 7.5 );
+      left: calc( 50% - 630vw * 3  / 7.5 / 2 ); }
+      .back .swipper.swiper_seven .swiper-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden; }
+        .back .swipper.swiper_seven .swiper-container .one {
+          background: url("../img/fgh_zxfgbj_zfs6_dzh_1.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_seven .swiper-container .two {
+          background: url("../img/fgh_zxfgbj_zfs6_dzh_2.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_seven .swiper-container .three {
+          background: url("../img/fgh_zxfgbj_zfs6_dzh_3.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_seven .swiper-container .four {
+          background: url("../img/fgh_zxfgbj_zfs6_dzh_4.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_seven .swiper-container .five {
+          background: url("../img/fgh_zxfgbj_zfs6_dzh_5.jpg") no-repeat;
+          background-size: 100% 100%; }
+    .back .swipper.swiper_eight {
+      width: calc( 630vw * 3  / 7.5 );
+      height: calc( 346vw / 7.5 );
+      top: calc( 6281vw / 7.5 );
+      left: calc( 50% - 630vw * 3  / 7.5 / 2 ); }
+      .back .swipper.swiper_eight .swiper-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden; }
+        .back .swipper.swiper_eight .swiper-container .one {
+          background: url("../img/fgh_zxfgbj_zfs6_hd_1.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_eight .swiper-container .two {
+          background: url("../img/fgh_zxfgbj_zfs6_hd_2.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_eight .swiper-container .three {
+          background: url("../img/fgh_zxfgbj_zfs6_hd_3.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_eight .swiper-container .four {
+          background: url("../img/fgh_zxfgbj_zfs6_hd_4.jpg") no-repeat;
+          background-size: 100% 100%; }
+        .back .swipper.swiper_eight .swiper-container .five {
+          background: url("../img/fgh_zxfgbj_zfs6_hd_5.jpg") no-repeat;
+          background-size: 100% 100%; }
+  .back .form_post {
+    position: absolute;
+    width: calc( 604vw / 7.5 ); }
+    .back .form_post.form_one {
+      top: calc( 841vw / 7.5 );
+      left: calc( 50% - 604vw / 7.5 / 2 ); }
+    .back .form_post input {
+      width: 100%;
+      height: calc( 80vw / 7.5 );
+      margin-bottom: calc( 15vw / 7.5 );
+      text-indent: calc( 20vw / 7.5 );
+      color: #7e7b7b;
+      border: 0;
+      background: transparent;
+      outline: none; }
+      .back .form_post input::-webkit-input-placeholder {
+        color: #7e7b7b; }
+    .back .form_post .req {
+      position: relative;
+      display: flex;
+      justify-content: space-between; }
+      .back .form_post .req span {
+        font-size: calc( 12vw / 7.5 );
+        color: #ffffff;
+        position: absolute;
+        line-height: calc( 76vw / 7.5 );
+        top: 0;
+        right: calc( 15vw / 7.5);
+        display: inline-block;
+        opacity: 0.5; }
+      .back .form_post .req select {
+        flex: 1;
+        height: calc( 82vw / 7.5 );
+        margin-bottom: calc( 15vw / 7.5 );
+        text-indent: calc( 20vw / 7.5 );
+        color: #7e7b7b;
+        outline: none;
+        border: 0;
+        border-radius: 3px;
+        background: #ededed;
+        text-align: center; }
+        .back .form_post .req select.last {
+          margin-right: 0; }
+      .back .form_post .req option {
+        color: #7e7b7b !important;
+        outline: none !important;
+        border: 0 !important;
+        text-indent: calc( 20vw / 7.5 ) !important;
+        border-radius: calc( 3vw / 7.5 ) !important;
+        background: #ededed !important;
+        text-align: center; }
+    .back .form_post .submit {
+      width: 100%;
+      height: calc( 87vw / 7.5 ); }
+
+/*# sourceMappingURL=fgh_zxfgbj_zfs6.css.map */

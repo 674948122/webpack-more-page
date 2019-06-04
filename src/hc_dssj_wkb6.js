@@ -22,10 +22,10 @@ window.onload = function() {
         slidesPerView : 3,
         spaceBetween : 15,
         centeredSlides : true,
-        autoplay:{             //自动播放
-            delay: 2500,
-            disableOnInteraction: false,
-        },
+        // autoplay:{             //自动播放
+        //     delay: 2500,
+        //     disableOnInteraction: false,
+        // },
         direction: 'horizontal', // 水平切换选项
         loop: true, // 循环模式选项
         
