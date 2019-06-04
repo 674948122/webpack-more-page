@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .Common_HeadTopics {
   width: 100%;
   height: 54px;
@@ -455,7 +456,12 @@
           border-radius: 3px;
           background: #ffffff;
           text-align: center;
-          font-size: 17px; }
+          font-size: 17px;
+          appearance: none;
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          /*在选择框的最右侧中间显示小箭头图片 */
+          background: url("../img/pc_selsect_triangle.png") no-repeat scroll right center transparent; }
           .back .inner .form_post .req select option {
             color: #7e7b7b !important;
             outline: none !important;
@@ -464,7 +470,10 @@
             border-radius: 3px !important;
             background: #ffffff !important;
             text-align: center;
-            font-size: 17px; }
+            font-size: 17px;
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none; }
       .back .inner .form_post .submit {
         position: absolute;
         top: 163px;
