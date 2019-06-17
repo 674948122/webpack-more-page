@@ -1,0 +1,158 @@
+body
+    overflow: scroll!important
+.back
+    position: relative
+    width: calc( 750vw / 7.5 )
+    height: calc( 7972vw / 7.5 )
+    background: url('../img/hc_bsbj_zfs7_back.jpg') no-repeat
+    background-size: 100% 100%
+    overflow-x: hidden
+    .gotop
+        position: absolute
+        top: calc( 4499vw / 7.5 )
+        right: calc( 40vw / 7.5 )
+        width: calc( 200vw / 7.5 )
+        height: calc( 60vw / 7.5 )
+
+    .swipper
+        position: absolute
+        &.swiper_one
+            width: calc( 663vw  / 7.5 )
+            height: calc( 409vw / 7.5 )
+            top: calc( 2117vw / 7.5 )
+            left: calc( 50% - 663vw  / 7.5 / 2 )
+            .swiper-container
+                width: 100%
+                height: 100%
+                border-radius: calc( 10vw / 7.5 )
+                overflow: hidden
+                .one
+                    background: url('../img/hc_bsbj_zfs7_1.jpg') no-repeat
+                    background-size: 100% 100%
+                .two
+                    background: url('../img/hc_bsbj_zfs7_2.jpg') no-repeat
+                    background-size: 100% 100%
+                .three
+                    background: url('../img/hc_bsbj_zfs7_3.jpg') no-repeat
+                    background-size: 100% 100%
+                .four
+                    background: url('../img/hc_bsbj_zfs7_4.jpg') no-repeat
+                    background-size: 100% 100%
+
+            .swiper-pagination
+                width: 100%
+                left: 0
+                bottom: calc( -45vw / 7.5 )
+                display: flex
+                flex-direction: row
+                justify-content: center
+                align-items: center
+                span
+                    background: #8b9096
+                    margin-right: calc( 6vw / 7.5 )
+                    outline: none
+                    &.swiper-pagination-bullet-active
+                        background: linear-gradient(top left, #efdbbb, #c49d7e)
+                        background: -ms-linear-gradient(top left, #efdbbb, #c49d7e)
+                        background: -webkit-linear-gradient(top left, #efdbbb, #c49d7e)
+                        background: -moz-linear-gradient(top left, #efdbbb, #c49d7e)
+            .swiper-button-prev
+                background-image: url('../img/hc_bsbj_zfs7_left.png')
+                width: calc( 60vw / 7.5 )
+                height: calc( 60vw / 7.5 )
+                background-repeat: no-repeat
+                background-size: 100% 100%
+                left: calc( -30vw / 7.5 )
+            .swiper-button-next
+                background-image: url('../img/hc_bsbj_zfs7_right.png')
+                width: calc( 60vw / 7.5 )
+                height: calc( 60vw / 7.5 )
+                background-repeat: no-repeat
+                background-size: 100% 100%
+                right: calc( -30vw / 7.5 )
+        &.swiper_two
+            width: 100%
+            height: calc( 321vw / 7.5 )
+            top: calc( 4790vw / 7.5 )
+            left: 0
+            .swiper-container
+                width: 100%
+                height: 100%
+                .one
+                    background: url('../img/hc_hb_wkb4_1.jpg') no-repeat
+                    background-size: 100% 100%
+                .two
+                    background: url('../img/hc_hb_wkb4_2.jpg') no-repeat
+                    background-size: 100% 100%
+                .three
+                    background: url('../img/hc_hb_wkb4_3.jpg') no-repeat
+                    background-size: 100% 100%
+                .four 
+                    background: url('../img/hc_hb_wkb4_4.jpg') no-repeat
+                    background-size: 100% 100%
+            .swiper-pagination
+                width: 100%
+                left: 0
+                bottom: calc( -45vw / 7.5 )
+                display: flex
+                flex-direction: row
+                justify-content: center
+                align-items: center
+                span
+                    background: #8b9096
+                    margin-right: calc( 6vw / 7.5 )
+                    outline: none
+                    &.swiper-pagination-bullet-active
+                        background: linear-gradient(top left, #efdbbb, #c49d7e)
+                        background: -ms-linear-gradient(top left, #efdbbb, #c49d7e)
+                        background: -webkit-linear-gradient(top left, #efdbbb, #c49d7e)
+                        background: -moz-linear-gradient(top left, #efdbbb, #c49d7e)
+
+    
+    .form_post 
+        position: absolute
+        width: calc( 604vw / 7.5 )
+        &.form_one 
+            top: calc( 1532vw / 7.5 )
+            left: calc( 50% - 604vw / 7.5 / 2 )
+        &.form_two
+            top: calc( 7400vw / 7.5 )
+            left: calc( 50% - 604vw / 7.5 / 2 )
+        input
+            width: 100%
+            height: calc( 82vw / 7.5 )
+            margin-bottom: calc( 10vw / 7.5 )
+            text-indent: calc( 20vw / 7.5 )
+            color: #7e7b7b
+            border: 0
+            background: transparent
+            outline: none
+            &::-webkit-input-placeholder
+                color: #7e7b7b
+        .req
+            position: relative
+            display: flex
+            justify-content: space-between
+            span
+                font-size: calc( 12vw / 7.5 )
+                color: #ffffff
+                position: absolute
+                line-height: calc( 76vw / 7.5 )
+                top: 0
+                right: calc( 15vw / 7.5)
+                display: inline-block
+                opacity: .5
+        .submit
+            margin-top: calc( 10vw / 7.5 )
+            width: 100%
+            height: calc( 82vw / 7.5 )
+.footer
+    background: #31251b
+    margin-top: -1px
+    .m-footer
+        padding-top: calc( 40vw / 7.5 )
+        padding-bottom: calc( 100vw / 7.5 )
+        text-align: center
+        font-size: calc( 23vw / 7.5 )
+        line-height: calc( 50vw / 7.5 )
+        color: #fff

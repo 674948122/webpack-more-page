@@ -79,7 +79,9 @@ module.exports = {
         kjby_ls_0515_wkb7: './src/kjby_ls_0515_wkb7.js',
         kjby_ls_0515_wkb7_pc: './src/kjby_ls_0515_wkb7_pc.js',
         hc_kjby_wkb8: './src/hc_kjby_wkb8.js',
-        hc_kjby_wkb8_pc: './src/hc_kjby_wkb8_pc.js'
+        hc_kjby_wkb8_pc: './src/hc_kjby_wkb8_pc.js',
+        hc_bsbj_zfs7: './src/hc_bsbj_zfs7.js',
+        hc_bsbj_zfs7_pc: './src/hc_bsbj_zfs7_pc.js'
     },
     // 出口文件配置项
     output: {
@@ -941,6 +943,34 @@ module.exports = {
             filename: "hc_kjby_wkb8_pc.html",
             title: "CCTV-2《空间榜样》别墅大师设计",
             chunks:['hc_kjby_wkb8_pc'], //添加引入的js,也就是entry中的key
+            favicon: './favicon.ico',//添加特定的 favicon 路径到输出的 HTML 文件中。
+            inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
+            showErrors:true,//是否将错误信息输出到html页面中
+        }),
+        new htmlPlugin({
+            minify: { //是对html文件进行压缩
+                removeAttributeQuotes: true,  //removeAttrubuteQuotes是却掉属性的双引号。
+                collapseWhitespace: true //折叠空白区域 也就是压缩代码
+            },
+            hash: true, //为了开发中js有缓存效果，所以加入hash，这样可以有效避免缓存JS。
+            template:'./src/hc_bsbj_zfs7.html', //是要打包的html模版路径和文件名称。
+            filename: "hc_bsbj_zfs7.html",
+            title: "别墅环保装修-免费报价",
+            chunks:['hc_bsbj_zfs7'], //添加引入的js,也就是entry中的key
+            favicon: './favicon.ico',//添加特定的 favicon 路径到输出的 HTML 文件中。
+            inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
+            showErrors:true,//是否将错误信息输出到html页面中
+        }),
+        new htmlPlugin({
+            minify: { //是对html文件进行压缩
+                removeAttributeQuotes: true,  //removeAttrubuteQuotes是却掉属性的双引号。
+                collapseWhitespace: true //折叠空白区域 也就是压缩代码
+            },
+            hash: true, //为了开发中js有缓存效果，所以加入hash，这样可以有效避免缓存JS。
+            template:'./src/hc_bsbj_zfs7_pc.html', //是要打包的html模版路径和文件名称。
+            filename: "hc_bsbj_zfs7_pc.html",
+            title: "别墅环保装修-免费报价",
+            chunks:['hc_bsbj_zfs7_pc'], //添加引入的js,也就是entry中的key
             favicon: './favicon.ico',//添加特定的 favicon 路径到输出的 HTML 文件中。
             inject:true,//1、true或者body：所有JavaScript资源插入到body元素的底部2、head: 所有JavaScript资源插入到head元素中3、false： 所有静态资源css和JavaScript都不会注入到模板文件中
             showErrors:true,//是否将错误信息输出到html页面中
