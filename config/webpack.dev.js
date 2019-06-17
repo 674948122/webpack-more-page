@@ -13,8 +13,8 @@ function resolve (dir) {
 // console.log(resolve ('abcdefghijklmnop'));
 
 var website ={
-    publicPath:"https://dsp2.yzf.com.cn/"  //线上环境
-    // publicPath:"http://localhost:8081/" //本地调试环境
+    // publicPath:"https://dsp2.yzf.com.cn/"  //线上环境
+    publicPath:"http://localhost:8081/" //本地调试环境
 }
 // 这里的IP和端口，是你本机的ip或者是你devServer配置的IP和端口。
 
